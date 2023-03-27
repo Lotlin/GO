@@ -5,6 +5,7 @@ html {
     --buttonColor: #6c0287;
 }
 
-.booking {
+.booking,
+.faq {
     --backgroundColor: #440f51;
 }
