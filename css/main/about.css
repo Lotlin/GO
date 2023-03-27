@@ -1,0 +1,369 @@
+.about {
+    padding: 32px 0 15px;
+}
+
+.about__title {
+    margin-bottom: 15px;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.about__text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.about__text p:not(:last-child) {
+    margin-bottom: 19px;
+}
+
+.about__img {
+    width: 280px;
+    height: 280px;
+    background: url("../../img/about.jpg") no-repeat;
+    background-size: cover;
+}
+
+.about__quote {
+    margin-bottom: 9px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.about__quote::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    top: 0;
+    left: 0;
+    background: url("../../img/icons/quotesLeft.svg") no-repeat;
+    background-size: contain;
+}
+
+.about__quote::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    bottom: 13px;
+    right: 115px;
+    background: url("../../img/icons/quotesRight.svg") no-repeat;
+    background-size: contain;
+}
+
+.about__cite {
+    max-width: 240px;
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__cite-img {
+    width: 56px;
+    height: 56px;
+}
+
+.about__cite-text {
+    max-width: 172px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media (min-width: 350px) {
+    .about {
+        padding: 10vw 0 4.69vw;
+    }
+
+    .about__title {
+        margin-bottom: 4.69vw;
+    }
+
+    .about__wrapper {
+        row-gap: 4.69vw;
+    }
+
+    .about__text {
+        font-size: 3.75vw;
+        line-height: 5vw;
+    }
+
+    .about__text p:not(:last-child) {
+        margin-bottom: 5.94vw;
+    }
+
+    .about__img {
+        width: 87.5vw;
+        height: 87.5vw;
+    }
+
+    .about__quote {
+        margin-bottom: 2.81vw;
+        padding-left: 4.69vw;
+        font-size: 6.63vw;
+        line-height: 11.25vw;
+    }
+
+    .about__quote::before {
+        width: 3.44vw;
+        height: 3.44vw;
+    }
+
+    .about__quote::after {
+        width: 3.44vw;
+        height: 3.44vw;
+        bottom: 4.5vw;
+        right: 28vw;
+    }
+
+    .about__cite {
+        max-width: 75vw;
+        min-height: 17.5vw;
+    }
+
+    .about__cite-img {
+        width: 17.5vw;
+        height: 17.5vw;
+    }
+
+    .about__cite-text {
+        max-width: 53.75vw;
+        font-size: 3.75vw;
+        line-height: 5vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .about {
+        padding: 60px 0 30px;
+    }
+
+    .about__title {
+        margin-bottom: 30px;
+    }
+
+    .about__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+
+    .about__text {
+        order: 2;
+        align-self: center;
+        max-width: 278px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .about__text p:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .about__img {
+        order: 1;
+        width: 382px;
+        height: 380px;
+    }
+
+    .about__quote-wrapper {
+        order: 3;
+    }
+
+    .about__quote {
+        margin-bottom: 16px;
+        padding-left: 22px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .about__quote::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .about__quote::after {
+        width: 16px;
+        height: 16px;
+        bottom: 15px;
+        right: 125px;
+    }
+
+    .about__cite {
+        max-width: 688px;
+        min-height: 78px;
+        padding-left: 368px;
+    }
+
+    .about__cite-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about__cite-text {
+        max-width: 225px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about {
+        padding: 70px 0 35px;
+    }
+
+    .about__title {
+        margin-bottom: 26px;
+    }
+
+    .about__wrapper {
+        display: grid;
+        grid-template-columns: 421px 444px;
+        grid-template-rows: 195px 217px;
+        gap: 26px 40px;
+        grid-template-areas:
+        "img text"
+        "img quote";
+    }
+
+    .about__text {
+        max-width: 444px;
+        font-size: 18px;
+        line-height: 24px;
+        grid-area: text;
+    }
+
+    .about__text p:not(:last-child) {
+        margin-bottom: 34px;
+    }
+
+    .about__img {
+        width: 420px;
+        height: 418px;
+        grid-area: img;
+    }
+
+    .about__quote-wrapper {
+        max-width: 444px;
+        grid-area: quote;
+    }
+
+    .about__quote {
+        margin-bottom: 34px;
+        padding-left: 22px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .about__quote::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .about__quote::after {
+        width: 16px;
+        height: 16px;
+        bottom: 15px;
+        right: 160px;
+    }
+
+    .about__cite {
+        max-width: 444px;
+        min-height: 78px;
+        padding-left: 114px;
+    }
+
+    .about__cite-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about__cite-text {
+        max-width: 225px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about {
+        padding: 100px 0 50px;
+    }
+
+    .about__title {
+        margin-bottom: 40px;
+    }
+
+    .about__wrapper {
+        display: grid;
+        grid-template-columns: 600px 500px;
+        grid-template-rows: 222px 325px;
+        gap: 48px 80px;
+    }
+
+    .about__text {
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .about__text p:not(:last-child) {
+        margin-bottom: 42px;
+    }
+
+    .about__img {
+        width: 600px;
+        height: 596px;
+    }
+
+    .about__quote-wrapper {
+        max-width: 500px;
+    }
+
+    .about__quote {
+        margin-bottom: 39px;
+        padding-left: 27px;
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .about__quote::before {
+        width: 22px;
+        height: 22px;
+    }
+
+    .about__quote::after {
+        width: 22px;
+        height: 22px;
+        bottom: 20px;
+        right: 120px;
+    }
+
+    .about__cite {
+        max-width: 503px;
+        min-height: 78px;
+        padding-left: 114px;
+    }
+
+    .about__cite-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about__cite-text {
+        max-width: 280px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

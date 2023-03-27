@@ -1,0 +1,10 @@
+html {
+    --color: #ffffff;
+    --backgroundColor: #1b1a1b;
+    --mainPurple: #cd06ff;
+    --buttonColor: #6c0287;
+}
+
+.booking {
+    --backgroundColor: #440f51;
+}

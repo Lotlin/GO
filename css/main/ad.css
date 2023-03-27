@@ -1,0 +1,210 @@
+.ad {
+    padding: 10px 0 23px;
+    min-height: 334px;
+}
+
+.ad__title {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+}
+
+.ad__list {
+    min-height: 245px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "vr audio"
+    "karaoke game"
+    "tv playStation";
+    gap: 10px;
+}
+
+.ad__item {
+    position: relative;
+}
+
+.ad__item--vr {
+    grid-area: vr;
+    position: relative;
+    background: url("../../img/vr.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ad__item--audio {
+    grid-area: audio;
+    background: url("../../img/audio.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ad__item--karaoke {
+    grid-area: karaoke;
+    background: url("../../img/karaoke.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ad__item--game {
+    grid-area: game;
+    background: url("../../img/game.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ad__item--tv {
+    grid-area: tv;
+    background: url("../../img/tv.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ad__item--playStation {
+    grid-area: playStation;
+    background: url("../../img/playStation.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ad__item-title {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.ad__item-title--multiple-lines {
+    max-width: 115px;
+}
+
+@media (min-width: 350px) {
+    .ad {
+        padding: 7.1875vw 0 4.6875vw;
+        min-height: 95.429vw;
+    }
+
+    .ad__title {
+        margin-bottom: 4.6875vw;
+        max-width: 87.5vw;
+    }
+
+    .ad__list {
+        min-height: 76.6vw;
+        gap: 3.125vw;
+    }
+
+    .ad__item-title {
+        top: 9.372vw;
+        left: 3.125vw;
+        font-size: 3.125vw;
+        line-height: 4.38vw;
+    }
+
+    .ad__item-title--multiple-lines {
+        max-width: 35.94vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .ad {
+        padding: 40px 0 30px;
+        min-height: 812px;
+    }
+
+    .ad__title {
+        margin-bottom: 30px;
+        max-width: 687px;
+    }
+
+    .ad__list {
+        min-height: 640px;
+        gap: 20px;
+    }
+
+    .ad__item-title {
+        top: 132px;
+        left: 30px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .ad__item-title--multiple-lines {
+        max-width: 274px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ad {
+        padding: 41px 0 35px;
+        min-height: 566px;
+    }
+
+    .ad__title {
+        margin-bottom: 36px;
+        max-width: 554px;
+    }
+
+    .ad__list {
+        min-height: 427px;
+        padding-bottom: 53px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "vr audio karaoke"
+        "game tv playStation";
+        gap: 30px 21px;
+    }
+
+    .ad__item:nth-child(3n + 2) {
+        transform: translateY(53px);
+
+    }
+
+    .ad__item-title {
+        top: 114px;
+        left: 20px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .ad__item-title--position {
+        top: 83px;
+    }
+
+    .ad__item-title--multiple-lines {
+        max-width: 254px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ad {
+        padding: 50px 0;
+        min-height: 739px;
+    }
+
+    .ad__title {
+        margin-bottom: 40px;
+        max-width: 698px;
+    }
+
+    .ad__list {
+        min-height: 566px;
+        padding-bottom: 70px;
+        gap: 40px 20px;
+    }
+
+    .ad__item:nth-child(3n + 2) {
+        transform: translateY(70px);
+
+    }
+
+    .ad__item-title {
+        top: 166px;
+        left: 40px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .ad__item-title--multiple-lines {
+        max-width: 274px;
+    }
+}

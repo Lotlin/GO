@@ -1,0 +1,1013 @@
+.booking {
+    padding: 30px 0;
+    background-color: var(--backgroundColor, #440f51);
+}
+
+.booking fieldset {
+    padding: 0;
+    border: none;
+}
+
+.booking__title {
+    margin-bottom: 13px;
+}
+
+
+.booking__subtitle {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.booking__hall-wrapper {
+    margin-bottom: 30px;
+    min-height: 74px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 14px 20px;
+    grid-template-areas:
+    "vibes star"
+    "west neon";
+    align-items: center;
+}
+
+.booking__hall-label {
+    width: 130px;
+    padding: 6px 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.radio-input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    display: block;
+}
+
+.booking__entertainment {
+    margin-bottom: 30px;
+}
+
+.booking__entertainment-wrapper {
+    min-height: 574px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 198px 213px 113px;
+    grid-template-areas:
+    "console"
+    "boardGame"
+    "additional";
+    row-gap: 25px;
+}
+
+.booking__subtitle--text-align {
+    text-align: left;
+}
+
+.booking__entertainment-item-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__entertainment-item-wrapper-console {
+    row-gap: 15px;
+}
+
+.booking__entertainment-radio-label {
+    min-height: 30px;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 8px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.booking__entertainment-radio::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.booking__entertainment-item-wrapper-board {
+    row-gap: 20px;
+}
+
+
+.booking__entertainment-checkbox-label {
+    min-height: 30px;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 8px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.checkbox-input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    display: block;
+}
+
+.booking__entertainment-checkbox::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-color: #ffffff;
+}
+
+.booking__entertainment-checkbox-VR {
+    padding-top: 10px;
+}
+
+.booking__entertainment-item-wrapper-add {
+    row-gap: 20px;
+}
+
+.booking__date {
+    margin-bottom: 35px;
+}
+
+.booking__date-subtitle {
+    margin-bottom: 25px;
+}
+
+.booking__group-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 119px repeat(2, 162px);
+    row-gap: 35px;
+    grid-template-areas:
+    "date"
+    "name"
+    "contact";
+}
+
+.booking__date-date {
+    grid-area: date;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 15px;
+    grid-template-areas:
+        "date-time"
+        "people";
+}
+
+.booking__date-time-wrapper {
+    grid-area: date-time;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 12px;
+    grid-template-areas:
+        "date time";
+}
+
+.booking__date-date-label-d {
+    grid-area: date;
+}
+
+.booking__date-date-label-t {
+    grid-area: time;
+}
+
+.booking__date-date-label {
+    width: 134px;
+    height: 52px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.booking__date-date-label-date-time::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 19px;
+    left: 86px;
+    width: 21px;
+    height: 15px;
+    background: url("../../img/icons/triangle.svg") no-repeat;
+    background-size: contain;
+}
+
+
+.booking__date-date-label-people {
+    grid-area: people;
+    width: 280px;
+}
+
+.booking__date-date-label-people::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: 232px;
+    width: 21px;
+    height: 15px;
+    background: url("../../img/icons/triangle.svg") no-repeat;
+    background-size: contain;
+}
+
+.booking__date-date-span {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    color: #211e1e;
+    font-size: 14px;
+}
+
+.booking__date-date-input {
+    opacity: 0;
+}
+
+.booking__date-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 14px;
+}
+
+.booking__date-name {
+    grid-area: name;
+    grid-template-areas:
+    "name"
+    "surename";
+}
+
+.booking__date-contact {
+    grid-area: contact;
+    grid-template-areas:
+    "phone"
+    "email";
+}
+
+
+.booking__date-data-label {
+    padding-top: 22px;
+    position: relative;
+}
+
+.booking__date-name-label-name {
+    grid-area: name;
+}
+
+.booking__date-name-label-surname {
+    grid-area: surename;
+}
+
+.booking__date-contact-label-phone {
+    grid-area: phone;
+}
+
+.booking__date-contact-label-email {
+    grid-area: email;
+}
+
+.booking__date-data-span {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    top: 0;
+    left: 0;
+}
+
+.booking__date-data-input {
+    width: 280px;
+    height: 52px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.booking__button {
+    padding: 17px 59px 17px 58px;
+    color: var(--buttonColor, #6c0287);
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (min-width: 350px) {
+    .booking {
+        padding: 9vw 0;
+    }
+
+    .booking__title {
+        margin-bottom: 4vw;
+    }
+
+    .booking__subtitle {
+        margin-bottom: 4.7vw;
+        font-size: 4.4vw;
+    }
+
+    .booking__hall-wrapper {
+        margin-bottom: 9vw;
+        min-height: 23vw;
+    }
+
+    .booking__hall-label {
+        width: 40vw;
+        padding: 2vw 6vw;
+        border-radius: 1.25vw;
+        font-size: 4vw;
+    }
+
+    .booking__entertainment {
+        margin-bottom: 9.4vw;
+    }
+
+    .booking__entertainment-wrapper {
+        min-height: 179vw;
+        grid-template-rows: 62vw 67vw 35vw;
+        row-gap: 6vw;
+    }
+
+    .booking__entertainment-item-wrapper-console {
+        row-gap: 4.7vw;
+    }
+
+    .booking__entertainment-radio-label {
+        min-height: 9vw;
+        padding-left: 12vw;
+        padding-top: 2vw;
+        font-size: 5vw;
+    }
+
+    .booking__entertainment-radio::before {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .booking__entertainment-item-wrapper-board {
+        row-gap: 6vw;
+    }
+
+    .booking__entertainment-checkbox-label {
+        min-height: 9vw;
+        padding-left: 12vw;
+        padding-top: 2vw;
+        font-size: 5vw;
+    }
+
+    .booking__entertainment-checkbox::before {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .booking__entertainment-checkbox-VR {
+        padding-top: 2vw;
+    }
+
+    .booking__entertainment-item-wrapper-add {
+        row-gap: 6vw;
+    }
+
+    .booking__date {
+        margin-bottom: 11vw;
+    }
+
+    .booking__date-subtitle {
+        margin-bottom: 7.81vw;
+    }
+
+    .booking__group-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 37.2vw repeat(2, 50.6vw);
+        row-gap: 10.94vw;
+    }
+
+    .booking__date-date {
+        row-gap: 4.7vw;
+    }
+
+    .booking__date-time-wrapper {
+        column-gap: 3.75vw;
+    }
+
+    .booking__date-date-label {
+        width: 41.88vw;
+        height: 16.25vw;
+    }
+
+    .booking__date-date-label-people {
+        grid-area: people;
+        width: 87.5vw;
+    }
+
+    .booking__date-date-span {
+        top: 5.31vw;
+        left: 6.25vw;
+        font-size: 4.38vw;
+    }
+
+    .booking__date-data {
+        row-gap: 4.38vw;
+    }
+
+    .booking__date-data-label {
+        padding-top: 6.88vw;
+    }
+
+    .booking__date-date-label-date-time::after {
+        top: 5.94vw;
+        left: 26.88vw;
+    }
+
+    .booking__date-date-label-people::after {
+        top: 5.63vw;
+        left: 72.5vw;
+    }
+
+    .booking__date-data-span {
+        font-size: 4.38vw;
+    }
+
+    .booking__date-data-input {
+        width: 87.5vw;
+        height: 16.25vw;
+    }
+
+    .booking__button {
+        padding: 5.21vw 18.44vw;
+        font-size: 5.63vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .booking {
+        padding: 50px 0;
+    }
+
+    .booking__title {
+        margin-bottom: 40px;
+    }
+
+    .booking__subtitle {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .booking__subtitle--text-align {
+        margin-bottom: 24px;
+    }
+
+    .booking__hall-wrapper {
+        margin-bottom: 50px;
+        min-height: 38px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 29px;
+        grid-template-areas:
+        "vibes star west neon";
+        align-items: center;
+    }
+
+    .booking__hall-label {
+        width: 150px;
+        padding: 9px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .booking__entertainment {
+        margin-bottom: 50px;
+    }
+
+    .booking__entertainment-wrapper {
+        min-height: 455px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 272px 151px;
+        grid-template-areas:
+        "console boardGame"
+        "additional .";
+        gap: 20px 66px;
+    }
+
+    .booking__entertainment-item-wrapper-console {
+        row-gap: 20px;
+    }
+
+    .booking__entertainment-radio-label {
+        min-height: 40px;
+        padding-top: 8px;
+        padding-left: 60px;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-radio::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .booking__entertainment-item-wrapper-board {
+        row-gap: 20px;
+    }
+
+    .booking__entertainment-checkbox-label {
+        min-height: 40px;
+        padding-top: 8px;
+        padding-left: 60px;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-checkbox::before {
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+    }
+
+    .booking__entertainment-checkbox-VR {
+        padding-top: 0;
+    }
+
+    .booking__entertainment-item-wrapper-add {
+        row-gap: 20px;
+    }
+
+    .booking__date {
+        margin-bottom: 48px;
+    }
+
+    .booking__date-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .booking__group-wrapper {
+        display: grid;
+        grid-template-columns: 280px 300px;
+        grid-template-rows: 52px 162px;
+        gap: 42px 106px;
+        grid-template-areas:
+        "date date"
+        "name contact";
+    }
+
+    .booking__date-date {
+        grid-area: date;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 106px;
+        grid-template-areas:
+        "date-time people"
+    }
+
+    .booking__date-time-wrapper {
+        grid-area: date-time;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 14px;
+        grid-template-areas:
+        "date time";
+    }
+
+    .booking__date-date-label-d {
+        grid-area: date;
+    }
+
+    .booking__date-date-label-t {
+        grid-area: time;
+    }
+
+    .booking__date-date-label {
+        width: 134px;
+        height: 52px;
+    }
+
+    .booking__date-date-label-date-time::after {
+        top: 19px;
+        left: 86px;
+    }
+
+    .booking__date-date-label-people {
+        grid-area: people;
+        width: 300px;
+
+    }
+
+    .booking__date-date-label-people::after {
+        top: 19px;
+        left: 252px;
+    }
+
+    .booking__date-date-span {
+        top: 17px;
+        left: 20px;
+        font-size: 18px;
+    }
+
+    .booking__date-data {
+        row-gap: 14px;
+    }
+
+    .booking__date-data-label {
+        padding-top: 22px;
+        position: relative;
+    }
+
+    .booking__date-data-span {
+        font-size: 16px;
+    }
+
+    .booking__date-data-input {
+        height: 52px;
+        width: 280px;
+    }
+
+    .booking__date-data-input--width {
+        width: 300px;
+    }
+
+    .booking__button-wrapper {
+        padding-left: 388px;
+    }
+
+    .booking__button {
+        padding: 16px 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px white;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .booking {
+        padding: 60px 0;
+    }
+
+    .booking__title {
+        margin-bottom: 25px;
+    }
+
+    .booking__subtitle {
+        margin-bottom: 26px;
+        font-size: 24px;
+    }
+
+    .booking__hall-wrapper {
+        margin-bottom: 60px;
+        min-height: 44px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 61px;
+        grid-template-areas:
+        "vibes star west neon";
+        align-items: center;
+    }
+
+    .booking__hall-label {
+        width: 180px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+
+    .booking__entertainment {
+        margin-bottom: 60px;
+    }
+
+    .booking__entertainment-wrapper {
+        min-height: 219px;
+        grid-template-columns: 289px 298px 255px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "console boardGame additional";
+        column-gap: 31px;
+    }
+
+    .booking__entertainment-item-wrapper-console {
+        row-gap: 20px;
+    }
+
+    .booking__entertainment-radio-label {
+        min-height: 25px;
+        padding-left: 39px;
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-radio::before {
+        width: 27px;
+        height: 27px;
+    }
+
+    .booking__entertainment-item-wrapper-board {
+        row-gap: 20px;
+    }
+
+    .booking__entertainment-checkbox-label {
+        min-height: 25px;
+        padding-left: 39px;
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-checkbox::before {
+        width: 27px;
+        height: 27px;
+    }
+
+    .booking__entertainment-checkbox-VR {
+        padding-top: 9px;
+    }
+
+    .booking__date {
+        margin-bottom: 60px;
+    }
+
+    .booking__date-subtitle {
+        margin-bottom: 26px;
+    }
+
+    .booking__group-wrapper {
+        min-height: 162px;
+        grid-template-columns: 300px 251px 254px;
+        grid-template-rows: 1fr;
+        column-gap: 50px;
+        grid-template-areas:
+        "date name contact";
+    }
+
+    .booking__date-date {
+        padding-top: 22px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 36px;
+        grid-template-areas:
+        "date-time"
+        "people";
+    }
+
+    .booking__date-time-wrapper {
+        grid-area: date-time;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 32px;
+        grid-template-areas:
+        "date time";
+    }
+
+    .booking__date-date-label-d {
+        grid-area: date;
+    }
+
+    .booking__date-date-label-t {
+        grid-area: time;
+    }
+
+    .booking__date-date-label {
+        width: 134px;
+        height: 52px;
+    }
+
+    .booking__date-date-label-people {
+        grid-area: people;
+        width: 300px;
+
+    }
+
+    .booking__date-date-label-people::after {
+        left: 252px;
+    }
+
+    .booking__date-date-span {
+        font-size: 18px;
+    }
+
+    .booking__date-data-label {
+        padding-top: 22px;
+        position: relative;
+    }
+
+    .booking__date-data-span {
+        font-size: 14px;
+    }
+
+    .booking__date-data-input {
+        width: 251px;
+    }
+
+    .booking__date-data-input--width {
+        width: 254px;
+    }
+
+    .booking__button-wrapper {
+        padding-left: 650px;
+    }
+
+    .booking__button {
+        padding: 13px 46px 13px 45px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px white;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .booking {
+        padding: 80px 0;
+    }
+
+    .booking__title {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .booking__subtitle {
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+
+    .booking__hall-wrapper {
+        margin-bottom: 60px;
+        min-height: 55px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 60px;
+        grid-template-areas:
+        "vibes star west neon";
+        align-items: center;
+    }
+
+    .booking__hall-label {
+        width: 250px;
+        padding: 8px 15px 9px;
+        border-radius: 8px;
+        font-size: 30px;
+    }
+
+    .booking__entertainment {
+        margin-bottom: 60px;
+    }
+
+    .booking__entertainment-wrapper {
+        min-height: 219px;
+        grid-template-columns: 280px 300px 300px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "console boardGame additional";
+        column-gap: 100px;
+    }
+
+    .booking__entertainment-item-wrapper-console {
+        row-gap: 20px;
+    }
+
+    .booking__entertainment-radio-label {
+        min-height: 27px;
+        padding-left: 39px;
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-radio::before {
+        width: 27px;
+        height: 27px;
+    }
+
+    .booking__entertainment-item-wrapper-board {
+        row-gap: 20px;
+    }
+
+    .booking__entertainment-checkbox-label {
+        min-height: 25px;
+        padding-left: 39px;
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-checkbox::before {
+        width: 27px;
+        height: 27px;
+    }
+
+    .booking__entertainment-checkbox-VR {
+        padding-top: 9px;
+    }
+
+    .booking__date {
+        margin-bottom: 40px;
+    }
+
+    .booking__date-subtitle {
+        margin-bottom: 38px;
+    }
+
+    .booking__group-wrapper {
+        min-height: 162px;
+        grid-template-columns: 300px 280px 300px;
+        grid-template-rows: 1fr;
+        column-gap: 50px;
+        grid-template-areas:
+        "date name contact";
+    }
+
+    .booking__date-date {
+        padding-top: 22px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 36px;
+        grid-template-areas:
+        "date-time"
+        "people";
+    }
+
+    .booking__date-time-wrapper {
+        grid-area: date-time;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 32px;
+        grid-template-areas:
+        "date time";
+    }
+
+    .booking__date-date-label-d {
+        grid-area: date;
+    }
+
+    .booking__date-date-label-t {
+        grid-area: time;
+    }
+
+    .booking__date-date-label {
+        width: 134px;
+        height: 52px;
+    }
+
+    .booking__date-date-label-people {
+        grid-area: people;
+        width: 300px;
+
+    }
+
+    .booking__date-date-label-people::after {
+        left: 252px;
+    }
+
+    .booking__date-date-span {
+        font-size: 18px;
+    }
+
+    .booking__date-data-label {
+        padding-top: 22px;
+        position: relative;
+    }
+
+    .booking__date-data-span {
+        font-size: 14px;
+    }
+
+    .booking__date-data-input {
+        width: 280px;
+    }
+
+    .booking__date-data-input--width {
+        width: 300px;
+    }
+
+    .booking__button-wrapper {
+        padding-left: 680px;
+    }
+
+    .booking__button {
+        padding: 16px 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px white;
+        font-size: 22px;
+    }
+}

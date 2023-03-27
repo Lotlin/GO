@@ -1,0 +1,362 @@
+.hero {
+    min-height: 237px;
+    padding: 10px 0 23px;
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero__container::before {
+    position: absolute;
+    display: block;
+    background: url("../../img/banner.png") no-repeat;
+    background-size: contain;
+    content: "";
+    width: 161px;
+    height: 179px;
+    left: 139px;
+    top: 25px;
+}
+
+.hero__title {
+    margin-bottom: 6px;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.hero__subtitle {
+    padding-left: 20px;
+    padding-bottom: 16px;
+    font-size: 10px;
+}
+
+.hero__description {
+    max-width: 139px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.hero__description-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    align-items: center;
+}
+
+
+.hero__description-left {
+    max-width: 65px;
+}
+
+.hero__text-important {
+    font-weight: 900;
+    color: var(--mainPurple, #cd06ff);
+}
+
+.hero__text-important-left {
+    font-size: 26px;
+}
+
+.hero__text-important-right {
+    padding-top: 4px;
+    font-size: 22px;
+}
+
+
+.hero__text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: center;
+}
+
+.hero__description-right {
+    max-width: 54px;
+}
+
+.hero__description-button {
+    padding: 8px 13px 7px;
+    background-color: var(--buttonColor, #6c0287);
+    border-radius: 4px;
+    box-shadow: 0 0 10px 2px var(--buttonColor);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media(min-width: 350px) {
+    .hero {
+        min-height: 74.065vw;
+        padding: 3.125vw 0 7.188vw;
+    }
+
+    .hero__container::before {
+        width: 50.3125vw;
+        height: 55.9375vw;
+        left: 42vw;
+        top: 7.8125vw;
+    }
+
+    .hero__title {
+        margin-bottom: 1.875vw;
+        font-size: 10.94vw;
+        letter-spacing: -0.1em;
+    }
+
+    .hero__subtitle {
+        padding-left: 6.25vw;
+        padding-bottom: 5vw;
+        font-size: 3.125vw;
+    }
+
+    .hero__description {
+        max-width: 42vw;
+        margin-bottom: 9.375vw;
+        column-gap: 5vw;
+    }
+
+    .hero__description-item {
+        row-gap: 1.8vw;
+    }
+
+    .hero__description-left {
+        max-width: 20.3125vw;
+    }
+
+    .hero__text-important-left {
+        font-size: 8.125vw;
+    }
+
+    .hero__text-important-right {
+        padding-top: 1.25vw;
+        font-size: 6.875vw;
+    }
+
+    .hero__text {
+        font-size: 3.125vw;
+        line-height: 3.4375vw;
+    }
+
+    .hero__description-right {
+        max-width: 15vw;
+    }
+
+    .hero__description-button {
+        padding: 2.5vw 4.06vw;
+        border-radius: 1.25vw;
+        font-size: 3.125vw;
+    }
+}
+
+@media(min-width: 768px) {
+    .hero {
+        min-height: 592px;
+        padding: 15px 0 40px;
+    }
+
+    .hero__container::before {
+        width: 409px;
+        height: 479px;
+        left: 319px;
+        top: 58px;
+    }
+
+    .hero__title {
+        margin-bottom: 20px;
+        font-size: 86px;
+        letter-spacing: -0.1em;
+    }
+
+    .hero__subtitle {
+        padding-left: 70px;
+        padding-bottom: 65px;
+        font-size: 18px;
+    }
+
+    .hero__description {
+        max-width: 222px;
+        margin-bottom: 100px;
+        column-gap: 30px;
+    }
+
+    .hero__description-item {
+        row-gap: 12px;
+    }
+
+
+    .hero__description-left {
+        max-width: 103px;
+    }
+
+    .hero__text-important-left {
+        font-size: 50px;
+    }
+
+    .hero__text-important-right {
+        padding-top: 10px;
+        font-size: 40px;
+    }
+
+
+    .hero__text {
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    .hero__description-right {
+        max-width: 89px;
+    }
+
+    .hero__description-button {
+        padding: 11px 35px 11px 34px;
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .hero {
+        min-height: 640px;
+        padding: 15px 0 42px;
+    }
+
+    .hero__container::before {
+        width: 453px;
+        height: 520px;
+        left: 511px;
+        top: 63px;
+    }
+
+    .hero__title {
+        margin-bottom: 20px;
+        font-size: 120px;
+        letter-spacing: -0.1em;
+    }
+
+    .hero__subtitle {
+        padding-left: 100px;
+        padding-bottom: 58px;
+        font-size: 22px;
+    }
+
+    .hero__description {
+        max-width: 348px;
+        margin-bottom: 80px;
+        column-gap: 40px;
+    }
+
+    .hero__description-item {
+        row-gap: 20px;
+    }
+
+    .hero__description-left {
+        max-width: 168px;
+    }
+
+    .hero__text-important-left {
+        font-size: 80px;
+    }
+
+    .hero__text-important-right {
+        padding-top: 25px;
+        font-size: 60px;
+    }
+
+    .hero__text {
+        font-size: 26px;
+        line-height: 100%;
+    }
+
+    .hero__description-right {
+        max-width: 140px;
+    }
+
+    .hero__description-button {
+        padding: 17px 48px;
+        border-radius: 10px;
+        font-size: 22px;
+    }
+
+    .hero__down {
+        position: absolute;
+        display: inline-block;
+        background: url("../../img/icons/down.svg");
+        background-size: contain;
+        width: 67px;
+        height: 67px;
+        left: 473px;
+        top: 480px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .hero {
+        min-height: 898px;
+        padding: 25px 0 50px;
+    }
+
+    .hero__container::before {
+        width: 675px;
+        height: 762px;
+        left: 635px;
+        top: 61px;
+    }
+
+    .hero__title {
+        margin-bottom: 0;
+        font-size: 150px;
+    }
+
+    .hero__subtitle {
+        padding-bottom: 65px;
+    }
+
+    .hero__description {
+        max-width: 399px;
+        margin-bottom: 150px;
+    }
+
+    .hero__description-item {
+        row-gap: 10px;
+    }
+
+    .hero__description-left {
+        max-width: 193px;
+    }
+
+    .hero__text-important-left {
+        font-size: 100px;
+    }
+
+    .hero__text-important-right {
+        padding-top: 30px;
+        font-size: 75px;
+    }
+
+    .hero__text {
+        font-size: 30px;
+    }
+
+    .hero__description-right {
+        max-width: 166px;
+    }
+
+    .hero__description-button {
+        padding: 25px 69px;
+        font-size: 26px;
+    }
+
+    .hero__down {
+        position: absolute;
+        display: inline-block;
+        background: url("../../img/icons/down.svg");
+        background-size: contain;
+        width: 97px;
+        height: 97px;
+        left: 669px;
+        top: 630px;
+    }
+}
