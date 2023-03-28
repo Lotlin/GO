@@ -9,3 +9,8 @@ html {
 .faq {
     --backgroundColor: #440f51;
 }
+
+.footer {
+    --backgroundColor1: #1b1a1b;
+    --backgroundColor2: #370a37;
+}
