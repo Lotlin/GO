@@ -1,0 +1,19 @@
+.halls {
+    padding: 10px 0 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+    row-gap: 30px;
+    grid-template-areas:
+    "hero"
+    "equipment"
+    "other";
+    justify-items: center;
+}
+
+.halls__section-title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,43 @@
+.halls__equipment {
+    grid-area: equipment;
+}
+
+.halls__equipment-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.halls__equipment-background {
+    width: 280px;
+    min-height: 180px;
+}
+
+.halls__equipment-background-vibes {
+    background: url("../../img/vibes.jpg");
+    background-size: cover;
+}
+
+.halls__equipment-background-starWars {
+    background: url("../../img/starWars.jpg");
+    background-size: cover;
+}
+
+.halls__equipment-background-wildWest {
+    background: url("../../img/wildWest.jpg");
+    background-size: cover;
+}
+
+.halls__equipment-background-neon {
+    background: url("../../img/neonStyle.jpg");
+    background-size: cover;
+}
+
+.halls__equipment-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.halls__equipment-text:not(:last-child) {
+    margin-bottom: 22px;
+}

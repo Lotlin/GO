@@ -1,5 +1,5 @@
 .copyright {
-    padding: 30px 0 24px;
+    padding-top: 31px;
 }
 
 .copyright__wrapper {
@@ -20,7 +20,7 @@
 
 @media (min-width: 350px) {
     .copyright {
-        padding: 9.38vw 0 7.5vw;
+        padding-top: 9.69vw;
     }
 
     .copyright__wrapper {
@@ -36,7 +36,7 @@
 
 @media (min-width: 768px) {
     .copyright {
-        padding: 32px 0 18px;
+        padding-top: 37px;
     }
 
     .copyright__wrapper {
@@ -54,12 +54,12 @@
 
 @media (min-width: 1024px) {
     .copyright {
-        padding: 46px 0 19px;
+        padding-top: 46px;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .copyright {
-        padding: 72px 0 21px;
+        padding-top: 72px;
     }
 }

@@ -13,3 +13,7 @@
 @import "footer/footer.css";
 @import "footer/contact.css";
 @import "footer/copyright.css";
+@import "halls/global.css";
+@import "halls/hero.css";
+@import "halls/equipment.css";
+@import "halls/other.css";

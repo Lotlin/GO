@@ -1,3 +1,28 @@
 .footer {
+    padding: 15px 0 24px;
     background-image: linear-gradient(var(--backgroundColor1, #1b1a1b) 0%, var(--backgroundColor2, #370a37) 100%);
+}
+
+@media (min-width: 350px) {
+    .footer {
+        padding: 4.69vw 0 7.5vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 35px 0 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        padding: 29px 0 19px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer {
+        padding: 50px 0 21px;
+    }
 }

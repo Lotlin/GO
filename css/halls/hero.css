@@ -1,0 +1,72 @@
+.halls__hero {
+    grid-area: hero;
+    position: relative;
+}
+
+.halls__hero-img {
+    margin-bottom: 30px;
+    width: 320px;
+    height: 168px;
+}
+
+.halls__hero-img-vibes {
+    background-image: url("../../img/halls/heroVibes.jpg");
+    background-size: cover;
+}
+
+.halls__hero-img-starWars {
+    background-image: url("../../img/halls/heroWars.jpg");
+    background-size: cover;
+}
+
+.halls__hero-img-wildWest {
+    background-image: url("../../img/halls/heroWest.jpg");
+    background-size: cover;
+}
+
+.halls__hero-img-neon {
+    background-image: url("../../img/halls/heroNeon.jpg");
+    background-size: cover;
+}
+
+.halls__hero-title {
+    position: absolute;
+    top: 94px;
+    left: 78px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.halls__hero-link {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-left: 42px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.halls__hero-link::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 9px;
+    background: url("../../img/halls/arrow.svg") no-repeat;
+    background-size: contain;
+}
+
+.halls__hero-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}

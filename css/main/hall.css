@@ -24,36 +24,38 @@
     position: relative;
 }
 
-.hall__item-vibes {
-    background: url("../../img/vibes.jpg") no-repeat;
-    background-size: contain;
-}
-
-.hall__item-star {
-    background: url("../../img/starWars.jpg") no-repeat;
-    background-size: contain;
-}
-
-.hall__item-west {
-    background: url("../../img/wildWest.jpg") no-repeat;
-    background-size: contain;
-}
-
-.hall__item-neon {
-    background: url("../../img/neonStyle.jpg") no-repeat;
-    background-size: contain;
-}
-
 .hall__link {
-    max-width: 84px;
     position: absolute;
-    top: 50px;
-    left: 100px;
+    width: 280px;
+    height: 168px;
+    padding: 50px 100px 0 100px;
+    top: 0;
+    left: 0;
     font-size: 26px;
     font-weight: 700;
     line-height: 34px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.hall__link-vibes {
+    background: url("../../img/vibes.jpg") no-repeat;
+    background-size: contain;
+}
+
+.hall__link-star {
+    background: url("../../img/starWars.jpg") no-repeat;
+    background-size: contain;
+}
+
+.hall__link-west {
+    background: url("../../img/wildWest.jpg") no-repeat;
+    background-size: contain;
+}
+
+.hall__link-neon {
+    background: url("../../img/neonStyle.jpg") no-repeat;
+    background-size: contain;
 }
 
 @media (min-width: 350px) {
@@ -72,10 +74,11 @@
     }
 
     .hall__link {
-        max-width: 26.25vw;
-        top: 15.625vw;
-        left: 31.25vw;
+        width: 87.5vw;
+        height: 52.5vw;
+        padding: 15.63vw 31.25vw 0 31.25vw;
         font-size: 8.125vw;
+        font-weight: 700;
         line-height: 10.625vw;
     }
 }
@@ -101,9 +104,9 @@
     }
 
     .hall__link {
-        max-width: 129px;
-        top: 61px;
-        left: 107px;
+        width: 335px;
+        height: 200px;
+        padding: 62px 107px 0 107px;
         font-size: 40px;
         line-height: 50px;
     }
@@ -125,9 +128,9 @@
     }
 
     .hall__link {
-        max-width: 252px;
-        top: 73px;
-        left: 95px;
+        width: 443px;
+        height: 267px;
+        padding: 73px 95px 0 95px;
         font-size: 50px;
         line-height: 60px;
     }
@@ -149,8 +152,9 @@
     }
 
     .hall__link {
-        top: 94px;
-        left: 164px;
+        width: 580px;
+        height: 349px;
+        padding: 64px 164px 0 164px;
         font-size: 70px;
         line-height: 80px;
     }

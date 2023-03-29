@@ -27,48 +27,56 @@
     </div>
   </header>
 
-  <main class="main-hall main-hall--vibes">
-    <section class="hero-hall hero-hall--vibes">
-      <h1 class="hero-hall__title">80’s vibes</h1>
-      <a class="hero-hall__link" href="index.html" tabindex="2">Вернуться назад</a>
-      <p class="hero-hall__text hero-hall__text--vibes">Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка, кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и устройте большую вечеринку!</p>
+  <main class="halls halls-vibes">
+    <section class="halls__hero">
+      <h1 class="halls__hero-title">80’s vibes</h1>
+      <a class="halls__hero-link" href="index.html" tabindex="2">Вернуться назад</a>
+      <div class="halls__hero-img halls__hero-img-vibes"></div>
+      <p class="halls__hero-text">Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка, кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и устройте большую вечеринку!</p>
     </section>
 
-    <section class="equipment-hall equipment-hall--vibes">
-      <h2 class="equipment-hall__title hall-section-title">Что есть в комнате?</h2>
-      <div class="equipment-hall__background"></div>
-      <p class="equipment-hall__text">В комнате STAR WARS есть игровые зоны в виде космических кораблей, командных пунктов и космических планет.</p>
-      <p class="equipment-hall__text">Так же вы сможете воспользоваться игровыми манипуляторами, приставками консолями или просто просмотреть любые серии саги на межпланетных экранах.</p>
+    <section class="halls__equipment">
+      <div class="container">
+        <h2 class="halls__equipment-title halls__section-title">Что есть в комнате?</h2>
+        <div class="halls__equipment-wrapper">
+          <div class="halls__equipment-background halls__equipment-background-vibes"></div>
+          <div class="halls__equipment-text-wrapper">
+            <p class="halls__equipment-text">В комнате 80-х есть игровые автоматы, магнитофоны, виниловые пластинки и мини кинотеатр.</p>
+            <p class="halls__equipment-text">Также вы можете выбрать игровую приставку, настольные игры, VR и караоке.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="other-hall">
-      <h2 class="other-hall__title hall-section-title">Другие комнаты</h2>
-      <ul class="other-hall__list">
-        <li class="other-hall__item other-hall__item--wildWest">
-          <a class="other-hall__link" href="wildwest.html" tabindex="3">1</a>
-          <h3 class="other-hall__subtitle">Wild west</h3>
-        </li>
-        <li class="other-hall__item other-hall__item--starWars">
-          <a class="other-hall__link" href="starwars.html" tabindex="3">2</a>
-          <h3 class="other-hall__subtitle">Star wars</h3>
-        </li>
-        <li class="other-hall__item other-hall__item--neon">
-          <a class="other-hall__link" href="neon.html" tabindex="3">3</a>
-          <h3 class="other-hall__subtitle">Neon style</h3>
-        </li>
-      </ul>
+    <section class="halls__other">
+      <div class="container">
+        <h2 class="halls__other-title halls__section-title">Другие комнаты</h2>
+        <ul class="halls__other-list halls__other-list-vibes">
+          <li class="halls__other-item halls__other-item-neon">
+            <a class="halls__other-link halls__other-link-neon" href="neon.html" tabindex="3"></a>
+            <h3 class="halls__other-subtitle">Neon style</h3>
+          </li>
+          <li class="halls__other-item halls__other-item-starWars">
+            <a class="halls__other-link halls__other-link-starsWars" href="starwars.html" tabindex="3"></a>
+            <h3 class="halls__other-subtitle">Star wars</h3>
+          </li>
+          <li class="halls__other-item halls__other-item-wildWest">
+            <a class="halls__other-link halls__other-link-wildWest" href="wildwest.html" tabindex="3"></a>
+            <h3 class="halls__other-subtitle">Wild west</h3>
+          </li>
+        </ul>
+      </div>
     </section>
-
   </main>
 
   <footer class="footer">
     <section class="contact" id="contact">
       <div class="container">
         <h2 class="contact__title section-title">Контакты</h2>
-        <div class="contact__content">
+        <div class="contact__wrapper">
           <div class="contact__info">
             <ul class="contact__list">
-              <li class="contact__item contact__item-address">г. Москва ул.&nbsp;Аквамарина, 16</li>
+              <li class="contact__item contact__item-address">г. Москва ул.&nbsp;Аквамарина,&nbsp;16</li>
               <li class="contact__item contact__item-tel"><a href="tel:+79509302893" class="contact__item-link" tabindex="13">8 (950) 930 - 28 - 93</a></li>
               <li class="contact__item contact__item-mail"><a href="mailto:GameOver@gmail.com" class="contact__item-link" tabindex="13">GameOver@gmail.com</a></li>
             </ul>
@@ -104,7 +112,6 @@
                 </a>
               </li>
             </ul>
-
           </div>
           <div class="contact__map"></div>
         </div>
