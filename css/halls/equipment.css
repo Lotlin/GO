@@ -41,3 +41,23 @@
 .halls__equipment-text:not(:last-child) {
     margin-bottom: 22px;
 }
+
+@media (min-width: 350px) {
+    .halls__equipment-wrapper {
+        row-gap: 4.69vw;
+    }
+
+    .halls__equipment-background {
+        width: 87.5vw;
+        min-height: 56.25vw;
+    }
+
+    .halls__equipment-text {
+        font-size: 3.75vw;
+        line-height: 5vw;
+    }
+
+    .halls__equipment-text:not(:last-child) {
+        margin-bottom: 6.88vw;
+    }
+}

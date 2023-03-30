@@ -17,3 +17,15 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+@media (min-width: 350px) {
+    .halls {
+        padding: 3.13vw 0 4.69vw;
+        row-gap: 9.38vw;
+    }
+
+    .halls__section-title {
+        margin-bottom: 4.69vw;
+        font-size: 4.38vw;
+    }
+}

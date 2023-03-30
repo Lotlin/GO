@@ -70,3 +70,36 @@
     line-height: 24px;
     text-align: center;
 }
+
+@media (min-width: 350px) {
+    .halls__hero-img {
+        margin-bottom: 9.38vw;
+        width: 100vw;
+        height: 52.5vw;
+    }
+
+    .halls__hero-title {
+        top: 29.38vw;
+        left: 24.38vw;
+        font-size: 9.38vw;
+        line-height: 11.25vw;
+    }
+
+    .halls__hero-link {
+        margin-bottom: 4.69vw;
+        padding-left: 13.13vw;
+        font-size: 3.75vw;
+    }
+
+    .halls__hero-link::before {
+        left: 6.25vw;
+        width: 5vw;
+        height: 2.81vw;
+    }
+
+    .halls__hero-text {
+        max-width: 87.5vw;
+        font-size: 5vw;
+        line-height: 7.5vw;
+    }
+}

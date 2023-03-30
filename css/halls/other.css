@@ -51,22 +51,22 @@
 
 .halls__other-link-neon {
     background: url("../../img/halls/neon.jpg") no-repeat center;
-    background-size: 280px 140px;
+    background-size: cover;
 }
 
 .halls__other-link-starsWars {
     background: url("../../img/halls/wars.jpg") no-repeat center;
-    background-size: 280px 140px;
+    background-size: cover;
 }
 
 .halls__other-link-wildWest {
     background: url("../../img/halls/west.jpg") no-repeat center;
-    background-size: 280px 140px;
+    background-size: cover;
 }
 
 .halls__other-link-vibes {
     background: url("../../img/halls/vibes.jpg") no-repeat center;
-    background-size: 280px 140px;
+    background-size: cover;
 }
 
 .halls__other-subtitle {
@@ -93,4 +93,25 @@
 
 .halls__other-item-wildWest {
     grid-area: west;
+}
+
+@media (min-width: 350px) {
+    .halls__other-list {
+        width: 87.5vw;
+        height: 134.38vw;
+        row-gap: 1.56vw;
+    }
+
+    .halls__other-link {
+        width: 87.5vw;
+        height: 43.75vw;
+    }
+
+    .halls__other-subtitle {
+        max-width: 19.06vw;
+        top: 14.38vw;
+        left: 34.06vw;
+        font-size: 6.25vw;
+        line-height: 7.5vw;
+    }
 }
