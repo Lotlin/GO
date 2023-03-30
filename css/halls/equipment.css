@@ -61,3 +61,78 @@
         margin-bottom: 6.88vw;
     }
 }
+
+@media (min-width: 768px) {
+    .halls__equipment-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 46px;
+    }
+
+    .halls__equipment-background {
+        width: 339px;
+        min-height: 326px;
+    }
+
+    .halls__equipment-text-wrapper {
+        align-self: center;
+        max-width: 313px;
+    }
+
+    .halls__equipment-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .halls__equipment-text:not(:last-child) {
+        margin-bottom: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .halls__equipment-wrapper {
+        column-gap: 30px;
+    }
+
+    .halls__equipment-background {
+        width: 461px;
+        min-height: 326px;
+    }
+
+    .halls__equipment-text-wrapper {
+        max-width: 413px;
+    }
+
+    .halls__equipment-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .halls__equipment-text:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .halls__equipment-wrapper {
+        column-gap: 80px;
+    }
+
+    .halls__equipment-background {
+        width: 600px;
+        min-height: 424px;
+    }
+
+    .halls__equipment-text-wrapper {
+        max-width: 500px;
+    }
+
+    .halls__equipment-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .halls__equipment-text:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
