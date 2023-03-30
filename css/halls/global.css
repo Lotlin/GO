@@ -29,3 +29,39 @@
         font-size: 4.38vw;
     }
 }
+
+@media (min-width: 768px) {
+    .halls {
+        padding: 25px 0;
+        row-gap: 60px;
+    }
+
+    .halls__section-title {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .halls {
+        padding: 35px 0 41px;
+        row-gap: 70px;
+    }
+
+    .halls__section-title {
+        margin-bottom: 36px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .halls {
+        padding: 35px 0 5px;
+        row-gap: 100px;
+    }
+
+    .halls__section-title {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+}
