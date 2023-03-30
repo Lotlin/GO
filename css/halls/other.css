@@ -115,3 +115,90 @@
         line-height: 7.5vw;
     }
 }
+
+@media (min-width: 768px) {
+    .halls__other-list {
+        width: 688px;
+        height: 134px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 8px;
+    }
+
+    .halls__other-list-vibes {
+        grid-template-areas:
+        "neon star west";
+    }
+
+    .halls__other-list-neon {
+        grid-template-areas:
+        "vibes west star";
+    }
+
+    .halls__other-list-wildWest {
+        grid-template-areas:
+        "star neon vibes";
+    }
+
+    .halls__other-list-starWars {
+        grid-template-areas:
+        "vibes west neon";
+    }
+
+    .halls__other-link {
+        display: inline-block;
+        width: 224px;
+        height: 134px;
+    }
+
+    .halls__other-subtitle {
+        max-width: 70px;
+        top: 43px;
+        left: 82px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .halls__other-list {
+        width: 886px;
+        height: 172px;
+        column-gap: 20px;
+    }
+
+    .halls__other-link {
+        width: 288px;
+        height: 172px;
+    }
+
+    .halls__other-subtitle {
+        max-width: 86px;
+        top: 50px;
+        left: 104px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .halls__other-list {
+        width: 1180px;
+        height: 229px;
+        column-gap: 20px;
+    }
+
+    .halls__other-link {
+        width: 380px;
+        height: 229px;
+    }
+
+    .halls__other-subtitle {
+        max-width: 91px;
+        top: 78px;
+        left: 146px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
