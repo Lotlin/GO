@@ -78,24 +78,24 @@
 
 @media (min-width: 350px) {
     .ad {
-        padding: 7.1875vw 0 4.6875vw;
-        min-height: 95.429vw;
+        padding: 7.19vw 0 4.69vw;
+        min-height: 95.43vw;
     }
 
     .ad__title {
-        margin-bottom: 4.6875vw;
+        margin-bottom: 4.69vw;
         max-width: 87.5vw;
     }
 
     .ad__list {
         min-height: 76.6vw;
-        gap: 3.125vw;
+        gap: 3.13vw;
     }
 
     .ad__item-title {
-        top: 9.372vw;
-        left: 3.125vw;
-        font-size: 3.125vw;
+        top: 9.37vw;
+        left: 3.13vw;
+        font-size: 3.13vw;
         line-height: 4.38vw;
     }
 

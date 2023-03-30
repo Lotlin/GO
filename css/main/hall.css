@@ -69,17 +69,17 @@
     }
 
     .hall__list {
-        min-height: 219.375vw;
-        row-gap: 3.125vw;
+        min-height: 219.38vw;
+        row-gap: 3.13vw;
     }
 
     .hall__link {
         width: 87.5vw;
         height: 52.5vw;
         padding: 15.63vw 31.25vw 0 31.25vw;
-        font-size: 8.125vw;
+        font-size: 8.13vw;
         font-weight: 700;
-        line-height: 10.625vw;
+        line-height: 10.63vw;
     }
 }
 

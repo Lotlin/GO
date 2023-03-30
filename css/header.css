@@ -34,12 +34,12 @@
 
 @media (min-width: 350px) {
     .header__logo {
-        width: 20.625vw;
-        height: 13.125vw;
+        width: 20.63vw;
+        height: 13.13vw;
     }
 
     .header__nav {
-        width: 12.1875vw;
+        width: 12.19vw;
         height: 6.25vw;
     }
 }

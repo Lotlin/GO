@@ -90,19 +90,19 @@
 
 @media(min-width: 350px) {
     .hero {
-        min-height: 74.065vw;
-        padding: 3.125vw 0 7.188vw;
+        min-height: 74.07vw;
+        padding: 3.13vw 0 7.19vw;
     }
 
     .hero__container::before {
-        width: 50.3125vw;
-        height: 55.9375vw;
+        width: 50.31vw;
+        height: 55.94vw;
         left: 42vw;
-        top: 7.8125vw;
+        top: 7.81vw;
     }
 
     .hero__title {
-        margin-bottom: 1.875vw;
+        margin-bottom: 1.88vw;
         font-size: 10.94vw;
         letter-spacing: -0.1em;
     }
@@ -110,12 +110,12 @@
     .hero__subtitle {
         padding-left: 6.25vw;
         padding-bottom: 5vw;
-        font-size: 3.125vw;
+        font-size: 3.13vw;
     }
 
     .hero__description {
         max-width: 42vw;
-        margin-bottom: 9.375vw;
+        margin-bottom: 9.38vw;
         column-gap: 5vw;
     }
 
@@ -124,21 +124,21 @@
     }
 
     .hero__description-left {
-        max-width: 20.3125vw;
+        max-width: 20.31vw;
     }
 
     .hero__text-important-left {
-        font-size: 8.125vw;
+        font-size: 8.13vw;
     }
 
     .hero__text-important-right {
         padding-top: 1.25vw;
-        font-size: 6.875vw;
+        font-size: 6.88vw;
     }
 
     .hero__text {
-        font-size: 3.125vw;
-        line-height: 3.4375vw;
+        font-size: 3.13vw;
+        line-height: 3.44vw;
     }
 
     .hero__description-right {
@@ -148,7 +148,7 @@
     .hero__description-button {
         padding: 2.5vw 4.06vw;
         border-radius: 1.25vw;
-        font-size: 3.125vw;
+        font-size: 3.13vw;
     }
 }
 
