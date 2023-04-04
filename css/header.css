@@ -71,6 +71,20 @@
         font-size: 18px;
         font-weight: 700;
         text-transform: uppercase;
+        transition-duration: 500ms;
+        transition-property: background-color, border;
+
+    }
+
+    .header__nav-button:hover,
+    .header__nav-button:focus {
+        background-color: var(--buttonHover, #6c0287);
+        border: 3px solid var(--buttonHover, #6c0287);
+    }
+
+    .header__nav-button:active {
+        background-color: var(--buttonActive, #640aa3);
+        border: 3px solid var(--buttonHover, #640aa3);
     }
 }
 

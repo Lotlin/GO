@@ -149,6 +149,17 @@
         padding: 2.5vw 4.06vw;
         border-radius: 1.25vw;
         font-size: 3.13vw;
+        transition-duration: 500ms;
+        transition-property: background-color;
+    }
+
+    .hero__description-button:hover,
+    .hero__description-button:focus {
+        background-color: var(--buttonHover, #6c0287);
+    }
+
+    .hero__description-button:active {
+        background-color: var(--buttonActive, #640aa3);
     }
 }
 

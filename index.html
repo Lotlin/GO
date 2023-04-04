@@ -91,134 +91,135 @@
     <section class="booking" id="booking">
       <div class="container booking__container">
         <h2 class="booking__title section-title">Забронировать зал просто</h2>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <fieldset class="booking__hall">
-            <legend class="booking__hall-title booking__subtitle">Выбери зал</legend>
-            <div class="booking__hall-wrapper">
-              <label class="booking__hall-label" tabindex="5">
-                <input class="booking__hall-radio radio-input" type="radio" name="hall" value="vibes" lang="en" tabindex="-1">
-                80's vibes
-              </label>
-              <label class="booking__hall-label" tabindex="5">
-                <input class="booking__hall-radio radio-input" type="radio" name="hall" value="starWars" lang="en" tabindex="-1">
-                Star wars
-              </label>
-              <label class="booking__hall-label" tabindex="5">
-                <input class="booking__hall-radio radio-input" type="radio" name="hall" value="wildWest" lang="en" tabindex="-1">
-                Wild west
-              </label>
-              <label class="booking__hall-label" tabindex="5">
-                <input class="booking__hall-radio radio-input" type="radio" name="hall" value="neon" lang="en" tabindex="-1">
-                Neon style
-              </label>
-            </div>
-          </fieldset>
 
-          <fieldset class="booking__entertainment">
-            <legend class="booking__entertainment-title booking__subtitle">Собери набор развлечений</legend>
-            <div class="booking__entertainment-wrapper">
-              <fieldset class="booking__entertainment-item">
-                <legend class="booking__subtitle booking__subtitle--text-align">Приставка:</legend>
-                <div class="booking__entertainment-item-wrapper booking__entertainment-item-wrapper-console">
-                  <label class="booking__entertainment-radio-label">
-                    <input class="radio-input booking__entertainment-radio" type="radio" name="console" value="PlayStation" lang="en" tabindex="6">
+        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+          <fieldset class="booking__content">
+            <fieldset class="booking__chooseHall">
+              <legend class="booking__legend">Выбери зал</legend>
+              <div class="booking__choseHall-list">
+                <label class="booking__choseHall-item-label" tabindex="5">
+                  <input class="booking__choseHall-item-radio radio-input" type="radio" name="hall" value="vibes" lang="en" tabindex="-1">
+                  80's vibes
+                </label>
+                <label class="booking__choseHall-item-label" tabindex="5">
+                  <input class="booking__choseHall-item-radio" type="radio" name="hall" value="vibes" lang="en" tabindex="-1">
+                  Star wars
+                </label>
+                <label class="booking__choseHall-item-label" tabindex="5">
+                  <input class="booking__choseHall-item-radio" type="radio" name="hall" value="vibes" lang="en" tabindex="-1">
+                  Wild west
+                </label>
+                <label class="booking__choseHall-item-label" tabindex="5">
+                  <input class="booking__choseHall-item-radio" type="radio" name="hall" value="vibes" lang="en" tabindex="-1">
+                  Neon style
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="booking__entertainment">
+              <legend class="booking__legend">Собери набор развлечений</legend>
+
+              <fieldset class="booking__entertainment-item booking__entertainment-item-console">
+                <legend class="booking__entertainment-item-legend">Приставка:</legend>
+                <div class="booking__entertainment-wrapper booking__entertainment-wrapper-console">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-radio" tabindex="6">
+                    <input class="booking__entertainment-item-radio" type="radio" name="console" value="PlayStation" lang="en" tabindex="-1">
                     PlayStation 5
                   </label>
-                  <label class="booking__entertainment-radio-label">
-                    <input class="radio-input booking__entertainment-radio" type="radio" name="console" value="Sega" lang="en" tabindex="-1">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-radio" tabindex="6">
+                    <input class="booking__entertainment-item-radio" type="radio" name="console" value="Sega" lang="en" tabindex="-1">
                     Sega Mega Drive
                   </label>
-                  <label class="booking__entertainment-radio-label">
-                    <input class="radio-input booking__entertainment-radio" type="radio" name="console" value="xBox" lang="en" tabindex="-1">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-radio" tabindex="6">
+                    <input class="booking__entertainment-item-radio" type="radio" name="console" value="xBox" lang="en" tabindex="-1">
                     X-box One S
                   </label>
-                  <label class="booking__entertainment-radio-label">
-                    <input class="radio-input booking__entertainment-radio" type="radio" name="console" value="Dendy" lang="en" tabindex="-1">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-radio" tabindex="6">
+                    <input class="booking__entertainment-item-radio" type="radio" name="console" value="Dendy" lang="en" tabindex="-1">
                     Dendy
                   </label>
                 </div>
               </fieldset>
 
-              <fieldset class="booking__entertainment-item">
-                <legend class="booking__subtitle booking__subtitle--text-align">Настольные игры</legend>
-                <div class="booking__entertainment-item-wrapper booking__entertainment-item-wrapper-board">
-                  <label class="booking__entertainment-checkbox-label">
-                    <input class="booking__entertainment-checkbox checkbox-input" type="checkbox" name="boardGames" value="Jenga" lang="en" tabindex="7">
+              <fieldset class="booking__entertainment-item booking__entertainment-item-boardGame">
+                <legend class="booking__entertainment-item-legend">Настольные игры</legend>
+                <div class="booking__entertainment-wrapper booking__entertainment-wrapper-boardGame">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-checkbox" tabindex="7">
+                    <input class="booking__entertainment-item-checkbox" type="checkbox" name="boardGames" value="Jenga" lang="en" tabindex="-1">
                     Jenga
                   </label>
-                  <label class="booking__entertainment-checkbox-label">
-                    <input class="booking__entertainment-checkbox checkbox-input" type="checkbox" name="boardGames" value="Monopoly" lang="en" tabindex="7">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-checkbox" tabindex="7">
+                    <input class="booking__entertainment-item-checkbox" type="checkbox" name="boardGames" value="Jenga" lang="en" tabindex="-1">
                     Monopoly
                   </label>
-                  <label class="booking__entertainment-checkbox-label">
-                    <input class="booking__entertainment-checkbox checkbox-input" type="checkbox" name="boardGames" value="Манчкин" tabindex="7">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-checkbox" tabindex="7">
+                    <input class="booking__entertainment-item-checkbox" type="checkbox" name="boardGames" value="Jenga" lang="en" tabindex="-1">
                     Манчкин
                   </label>
-                  <label class="booking__entertainment-checkbox-label">
-                    <input class="booking__entertainment-checkbox checkbox-input" type="checkbox" name="boardGames" value="Alias" lang="en" tabindex="7">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-checkbox" tabindex="7">
+                    <input class="booking__entertainment-item-checkbox" type="checkbox" name="boardGames" value="Jenga" lang="en" tabindex="-1">
                     Alias
                   </label>
                 </div>
               </fieldset>
 
-              <fieldset class="booking__entertainment-item">
-                <legend class="booking__subtitle booking__subtitle--text-align">Дополнительно</legend>
-                <div class="booking__entertainment-item-wrapper booking__entertainment-item-wrapper-add">
-                  <label class="booking__entertainment-checkbox-label">
-                    <input class="booking__entertainment-checkbox checkbox-input" type="checkbox" name="additional" value="Караоке" tabindex="7">
+              <fieldset class="booking__entertainment-item booking__entertainment-item-additional">
+                <legend class="booking__entertainment-item-legend">Дополнительно</legend>
+                <div class="booking__entertainment-wrapper booking__entertainment-wrapper-additional">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-checkbox" tabindex="8">
+                    <input class="booking__entertainment-item-checkbox" type="checkbox" name="additional" value="Караоке" tabindex="-1">
                     Караоке
                   </label>
-                  <label class="booking__entertainment-checkbox-label">
-                    <input class="booking__entertainment-checkbox  booking__entertainment-checkbox-VR checkbox-input" type="checkbox" name="additional" value="VR" lang="en" tabindex="7">
+                  <label class="booking__entertainment-item-label booking__entertainment-item-label-checkbox" tabindex="8">
+                    <input class="booking__entertainment-item-checkbox" type="checkbox" name="additional" value="Караоке" tabindex="-1">
                     VR
                   </label>
                 </div>
               </fieldset>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="booking__date">
-            <legend class="booking__subtitle booking__date-subtitle">Выбери дату и время</legend>
-            <div class="booking__group-wrapper">
-              <div class="booking__date-date">
-                <div class="booking__date-time-wrapper">
-                  <label class="booking__date-date-label booking__date-date-label-d booking__date-date-label-date-time" tabindex="9">
-                    <span class="booking__date-date-span">Дата</span>
-                    <input class="booking__date-date-input" type="date" name="date" required tabindex="-1">
+            <fieldset class="booking__date">
+              <legend class="booking__legend booking__legend--margin-bottom">Выбери дату и время</legend>
+              <div class="booking__date__wrapper">
+                <div class="booking__date-item-wrapper booking__date-item-time-wrapper">
+                  <label class="booking__date-item-label booking__date-item-label-times booking__date-item-label-date" tabindex="9">
+                    <span class="booking__date-item-span booking__date-item-span-time">Дата</span>
+                    <input class="booking__date-item-input booking__date-item-input-times" type="date" name="date" required tabindex="-1">
                   </label>
-                  <label class="booking__date-date-label booking__date-date-label-t booking__date-date-label-date-time" tabindex="9">
-                    <span class="booking__date-date-span">Время</span>
-                    <input class="booking__date-date-input" type="time" name="time" required tabindex="-1">
+                  <label class="booking__date-item-label booking__date-item-label-times booking__date-item-label-time" tabindex="9">
+                    <span class="booking__date-item-span booking__date-item-span-time">Время</span>
+                    <input class="booking__date-item-input booking__date-item-input-times" type="time" name="time" required tabindex="-1">
+                  </label>
+                  <label class="booking__date-item-label booking__date-item-label-times booking__date-item-label-numPeople" tabindex="9">
+                    <span class="booking__date-item-span booking__date-item-span-time">Сколько человек</span>
+                    <input class="booking__date-item-input booking__date-item-input-times" type="text" name="numPeople" required tabindex="-1">
                   </label>
                 </div>
-                <label class="booking__date-date-label booking__date-date-label-people" tabindex="9">
-                  <span class="booking__date-date-span">Сколько человек</span>
-                  <input class="booking__date-date-input" type="text" name="guestAmount" required tabindex="-1">
-                </label>
-              </div>
 
-              <div class="booking__date-data booking__date-name">
-                <label class="booking__date-data-label booking__date-name-label-name" tabindex="10">
-                  <span class="booking__date-data-span">Имя</span>
-                  <input class="booking__date-data-input" type="text" name="firstName" required tabindex="-1">
-                </label>
-                <label class="booking__date-data-label booking__date-name-label-surname" tabindex="10">
-                  <span class="booking__date-data-span">Фамилия</span>
-                  <input class="booking__date-data-input" type="text" name="lastName" required tabindex="-1">
-                </label>
-              </div>
+                <div class="booking__date-item booking__date-item-nameContact booking__date-item-name">
+                  <label class="booking__date-item-label booking__date-item-label-nameContact booking__date-item-label-name-firstName" tabindex="-1">
+                    <span class="booking__date-item-span booking__date-item-span-nameContact">Имя</span>
+                    <input class="booking__date-item-input booking__date-item-input-nameContact" type="text" name="firstName" required tabindex="10">
+                  </label>
+                  <label class="booking__date-item-label booking__date-item-label-nameContact booking__date-item-label-name-secondName" tabindex="-1">
+                    <span class="booking__date-item-span booking__date-item-span-name">Фамилия</span>
+                    <input class="booking__date-item-input booking__date-item-input-nameContact" type="text" name="secondName" required tabindex="10">
+                  </label>
+                </div>
 
-              <div class="booking__date-data booking__date-contact">
-                <label class="booking__date-data-label booking__date-contact-label-phone" tabindex="11">
-                  <span class="booking__date-data-span">Телефон</span>
-                  <input class="booking__date-data-input booking__date-data-input--width" type="tel" name="tel" required tabindex="-1">
-                </label>
-                <label class="booking__date-data-label booking__date-contact-label-email" tabindex="11">
-                  <span class="booking__date-data-span">E-mail</span>
-                  <input class="booking__date-data-input booking__date-data-input--width" type="email" name="email" required tabindex="-1">
-                </label>
+                <div class="booking__date-item booking__date-item-nameContact booking__date-item-contact">
+                  <label class="booking__date-item-label booking__date-item-label-nameContact booking__date-item-label-contact-phone" tabindex="-1">
+                    <span class="booking__date-item-span">Телефон</span>
+                    <input class="booking__date-item-input booking__date-item-input-nameContact" type="tel" name="tel" required tabindex="11">
+                  </label>
+                  <label class="booking__date-item-label booking__date-item-label-nameContact booking__date-item-label-contact-email" tabindex="-1">
+                    <span class="booking__date-item-span">E-mail</span>
+                    <input class="booking__date-item-input booking__date-item-input-nameContact" type="tel" name="tel" required tabindex="11">
+                  </label>
+                </div>
               </div>
-            </div>
+            </fieldset>
           </fieldset>
 
           <div class="booking__button-wrapper">
@@ -227,7 +228,7 @@
         </form>
       </div>
     </section>
-
+    
     <section class="about" id="about">
       <div class="container about__container">
         <h2 class="about__title section-title">О нас</h2>

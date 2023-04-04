@@ -10,7 +10,26 @@ html {
     --backgroundColor: #440f51;
 }
 
+.booking {
+    --hallHoverBackground: #eadeed;
+    --hallHoverBorder: #640aa3;
+    --hallFocusBackground: #ffffff;
+    --hallAcriveBackground: #6c0287;
+    --hallAcriveBorder: #ffffff;
+    --dateFocusActive: #cd06ff;
+}
+
 .footer {
     --backgroundColor1: #1b1a1b;
     --backgroundColor2: #370a37;
+}
+
+.header {
+    --buttonHover: #6c0287;
+    --buttonActive: #640aa3;
+}
+
+.hero {
+    --buttonHover: #840aa3;
+    --buttonActive: #640aa3;
 }
