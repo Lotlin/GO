@@ -31,7 +31,7 @@
     grid-template-rows: minmax(107px, max-content) minmax(607px, max-content) minmax(557px, max-content);
     grid-template-areas:
     "hall"
-    "entertaiment"
+    "entertainment"
     "date";
     row-gap: 30px;
 }
@@ -84,7 +84,10 @@
 }
 
 .booking__entertainment {
-    grid-area: entertaiment;
+    grid-area: entertainment;
+}
+
+.booking__entertainment-totalWrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(198px, max-content) minmax(213px, max-content) minmax(113px, max-content);
@@ -281,7 +284,7 @@
     content: "";
     width: 21px;
     height: 15px;
-    background: url("../../img/icons/triangle.svg");
+    background: url("../../img/icons/triangle.svg") no-repeat;
 }
 
 .booking__date-item-label-date::after,
@@ -379,4 +382,610 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media (min-width: 350px) {
+    .booking {
+        padding: 10vw 0 8.75vw;
+    }
+
+    .booking__title {
+        margin-bottom: 4.06vw;
+    }
+
+    .booking__legend {
+        margin-bottom: 4.69vw;
+        font-size: 4.38vw;
+        line-height: 5.63vw;
+    }
+
+    .booking__legend--margin-bottom {
+        margin-bottom: 7.81vw;
+    }
+
+    .booking__content {
+        margin-bottom: 10.94vw;
+        grid-template-rows: minmax(33.44vw, max-content) minmax(189.69vw, max-content) minmax(174.06vw, max-content);
+        row-gap: 9.38vw;
+    }
+
+    .booking__choseHall-list {
+        height: 23.13vw;
+        gap: 4.38vw 6.25vw;
+    }
+
+    .booking__choseHall-item-label {
+        padding-top: 1.88vw;
+        font-size: 4.38vw;
+    }
+
+    .booking__entertainment-totalWrapper {
+        grid-template-rows: minmax(61.88vw, max-content) minmax(66.56vw, max-content) minmax(35.31vw, max-content);
+        row-gap: 7.81vw;
+    }
+
+    .booking__entertainment-item-legend {
+        margin-bottom: 4.06vw;
+        font-size: 4.38vw;
+    }
+
+    .booking__entertainment-wrapper-console {
+        row-gap: 9.38vw;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        row-gap: 9.38vw;
+    }
+
+    .booking__entertainment-wrapper-console {
+        height: 51.56vw;
+    }
+
+    .booking__entertainment-item-label {
+        padding-left: 15.63vw;
+        font-size: 5vw;
+    }
+
+    .booking__entertainment-item-radio:before {
+        width: 9.38vw;
+        height: 9.38vw;
+    }
+
+    .booking__entertainment-item-label-radio:focus:before,
+    .booking__entertainment-item-radio:focus:before {
+        width: 14.38vw;
+        height: 14.38vw;
+        left: -2.81vw;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        height: 56.25vw;
+    }
+
+    .booking__entertainment-item-checkbox:before {
+        width: 9.38vw;
+        height: 9.38vw;
+    }
+
+    .booking__entertainment-item-label-checkbox:focus:before,
+    .booking__entertainment-item-checkbox:focus:before {
+        width: 9.38vw;
+        height: 9.38vw;
+    }
+
+    .booking__entertainment-wrapper-additional {
+        height: 22.5vw;
+    }
+
+    .booking__date__wrapper {
+        grid-template-rows: minmax(37.19vw, max-content) repeat(2, minmax(50.63vw, max-content));
+        row-gap: 11.22vw;
+    }
+
+    .booking__date-item-time-wrapper {
+        gap: 4.69vw 3.75vw;
+    }
+
+    .booking__date-item-label-times::after {
+        width: 6.56vw;
+        height: 4.69vw;
+    }
+
+    .booking__date-item-label-date::after,
+    .booking__date-item-label-time::after {
+        top: 5.94vw;
+        left: 26.88vw;
+    }
+
+    .booking__date-item-label-numPeople::after {
+        top: 5.63vw;
+        left: 72.5vw;
+    }
+
+    .booking__date-item-span-time {
+        top: 5.31vw;
+        left: 6.25vw;
+        font-size: 4.38vw;
+    }
+
+    .booking__date-item-nameContact {
+        row-gap: 4.38vw;
+    }
+
+    .booking__date-item-label-nameContact {
+        padding-top: 6.88vw;
+    }
+
+    .booking__date-item-input-nameContact {
+        width: 87.5vw;
+        height: 16.25vw;
+    }
+
+    .booking__date-item-span-nameContact {
+        font-size: 4.38vw;
+    }
+
+    .booking__button {
+        padding: 5.31vw 18.44vw 5.31vw 18.13vw;
+        font-size: 5.62vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .booking {
+        padding: 50px 0;
+    }
+
+    .booking__title {
+        margin-bottom: 40px;
+    }
+
+    .booking__legend {
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .booking__legend--margin-bottom {
+        margin-bottom: 30px;
+    }
+
+    .booking__content {
+        margin-bottom: 48px;
+        grid-template-rows: minmax(96px, max-content) minmax(513px, max-content) minmax(314px, max-content);
+        row-gap: 50px;
+    }
+
+    .booking__choseHall-list {
+        display: grid;
+        height: 38px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 29px;
+    }
+
+    .booking__choseHall-item-label {
+        padding-top: 9px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .booking__entertainment-totalWrapper {
+        display: grid;
+        grid-template-columns: minmax(301px, max-content) minmax(321px, max-content);
+        grid-template-rows: minmax(272px, max-content) minmax(151px, max-content);
+        grid-template-areas:
+        "console boardGame"
+        "additional .";
+        gap: 39px 66px;
+    }
+
+    .booking__entertainment-item-legend {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+    .booking__entertainment-wrapper-console {
+        height: 220px;
+        row-gap: 35px;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        row-gap: 35px;
+    }
+
+    .booking__entertainment-wrapper-additional {
+        justify-content: stretch;
+        row-gap: 35px;
+    }
+
+    .booking__entertainment-item-label {
+        padding-left: 60px;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-item-radio:before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .booking__entertainment-item-label-radio:focus:before,
+    .booking__entertainment-item-radio:focus:before {
+        position: absolute;
+        display: block;
+        width: 61px;
+        height: 61px;
+        content: "";
+        left: -9px;
+        top: 50%;
+        transform: translateY(-50%);
+        outline: 1px solid transparent;
+        background: url("../../img/icons/radioFocus.svg") no-repeat center;
+        background-size: 44px;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        height: 220px;
+    }
+
+    .booking__entertainment-item-checkbox:before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .booking__entertainment-item-label-checkbox:focus:before,
+    .booking__entertainment-item-checkbox:focus:before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .booking__entertainment-wrapper-additional {
+        height: 100px;
+    }
+
+    .booking__date__wrapper {
+        display: grid;
+        grid-template-columns: minmax(282px, max-content) minmax(300px, max-content);
+        grid-template-rows: minmax(52px, max-content) minmax(162px, max-content);
+        grid-template-areas:
+        "times times"
+        "names contact";
+        gap: 42px 106px;
+    }
+
+    .booking__date-item-time-wrapper {
+        grid-area: times;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(134px, max-content)) minmax(392px, max-content);;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "date time numPeople";
+        column-gap: 14px;
+    }
+
+    .booking__date-item-label-numPeople {
+        width: 300px;
+        justify-self: end;
+    }
+
+    .booking__date-item-label-times::after {
+        width: 21px;
+        height: 15px;
+    }
+
+    .booking__date-item-label-date::after,
+    .booking__date-item-label-time::after {
+        top: 19px;
+        left: 86px;
+    }
+
+    .booking__date-item-label-numPeople::after {
+        top: 18px;
+        left: 252px;
+    }
+
+    .booking__date-item-span-time {
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .booking__date-item-nameContact {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 14px;
+    }
+
+    .booking__date-item-label-nameContact {
+        position: relative;
+        padding-top: 22px;
+        outline: none;
+    }
+
+    .booking__date-item-input-nameContact {
+        width: 280px;
+        height: 52px;
+        border: 2px solid transparent;
+    }
+
+    .booking__date-item-input-nameContact--width {
+        width: 300px;
+    }
+
+    .booking__date-item-span-nameContact {
+        position: absolute;
+        top: 0;
+        font-size: 14px;
+    }
+
+    .booking__button-wrapper {
+        padding-left: 388px;
+    }
+
+    .booking__button {
+        padding: 16px 50px;
+        border-radius: 10px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .booking {
+        padding: 60px 0;
+    }
+
+    .booking__title {
+        margin-bottom: 25px;
+    }
+
+    .booking__legend {
+        margin-bottom: 26px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .booking__legend--margin-bottom {
+        margin-bottom: 26px;
+    }
+
+    .booking__content {
+        margin-bottom: 50px;
+        grid-template-rows: minmax(98px, max-content) minmax(273px, max-content) minmax(216px, max-content);
+        row-gap: 60px;
+    }
+
+    .booking__choseHall-list {
+        height: 44px;
+        column-gap: 61px;
+    }
+
+    .booking__choseHall-item-label {
+        padding-top: 10px;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+
+    .booking__entertainment-totalWrapper {
+        height: 273px;
+        display: grid;
+        grid-template-columns: minmax(289px, max-content) minmax(298px, max-content) minmax(255px, max-content);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "console boardGame additional";
+        column-gap: 31px;
+    }
+
+    .booking__entertainment-item-legend {
+        margin-bottom: 26px;
+        font-size: 24px;
+    }
+
+    .booking__entertainment-wrapper-console {
+        height: 168px;
+        row-gap: 21px;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        row-gap: 21px;
+    }
+
+    .booking__entertainment-wrapper-additional {
+        row-gap: 21px;
+    }
+
+    .booking__entertainment-item-label {
+        padding-left: 29px;
+        font-size: 22px;
+    }
+
+    .booking__entertainment-item-radio:before {
+        width: 27px;
+        height: 27px;
+    }
+
+    .booking__entertainment-item-label-radio:focus:before,
+    .booking__entertainment-item-radio:focus:before {
+        width: 44px;
+        height: 44px;
+        left: -9px;
+        background-size: 32px;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        height: 220px;
+    }
+
+    .booking__entertainment-item-checkbox:before {
+        width: 25px;
+        height: 25px;
+    }
+
+    .booking__entertainment-item-label-checkbox:focus:before,
+    .booking__entertainment-item-checkbox:focus:before {
+        width: 25px;
+        height: 25px;
+    }
+
+    .booking__entertainment-wrapper-additional {
+        height: 74px;
+    }
+
+    .booking__date__wrapper {
+        grid-template-columns: minmax(300px, max-content) minmax(251px, max-content) minmax(254px, max-content);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "times names contact";
+        column-gap: 49px;
+    }
+
+    .booking__date-item-time-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "date time"
+        "numPeople numPeople";
+        gap: 14px 32px;
+    }
+
+    .booking__date-item-label-times {
+        align-self: end;
+        height: 52px;
+    }
+
+    .booking__date-item-label-numPeople {
+        justify-self: stretch;
+    }
+
+    .booking__date-item-span-time {
+        top: 17px;
+        left: 20px;
+        font-size: 18px;
+    }
+
+    .booking__date-item-nameContact {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 14px;
+    }
+
+    .booking__date-item-input-nameContact {
+        width: 251px;
+        height: 52px;
+        border: 2px solid transparent;
+    }
+
+    .booking__date-item-input-nameContact--width {
+        width: 254px;
+    }
+
+    .booking__button-wrapper {
+        padding-left: 650px;
+    }
+
+    .booking__button {
+        padding: 13px 46px 13px 45px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .booking {
+        padding: 80px 0;
+    }
+
+    .booking__title {
+        margin-bottom: 40px;
+    }
+
+    .booking__legend {
+        margin-bottom: 40px;
+    }
+
+    .booking__legend--margin-bottom {
+        margin-bottom: 38px;
+    }
+
+    .booking__content {
+        margin-bottom: 40px;
+        grid-template-rows: minmax(123px, max-content) minmax(287px, max-content) minmax(216px, max-content);
+        row-gap: 60px;
+    }
+
+    .booking__choseHall-list {
+        height: 55px;
+        column-gap: 61px;
+    }
+
+    .booking__choseHall-item-label {
+        padding-top: 7px;
+        border-radius: 8px;
+        font-size: 30px;
+    }
+
+    .booking__entertainment {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .booking__entertainment-totalWrapper {
+        height: 219px;
+        display: grid;
+        grid-template-columns: minmax(280px, max-content) minmax(300px, max-content) minmax(200px, max-content);
+        grid-template-rows: 219px;
+        column-gap: 100px;
+    }
+
+    .booking__entertainment-item-legend {
+        margin-bottom: 23px;
+    }
+
+    .booking__entertainment-wrapper-console {
+        height: 168px;
+        row-gap: 21px;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        row-gap: 21px;
+    }
+
+    .booking__entertainment-wrapper-additional {
+        row-gap: 21px;
+    }
+
+    .booking__entertainment-wrapper-boardGame {
+        height: 160px;
+    }
+
+    .booking__date {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .booking__date__wrapper {
+        grid-template-columns: minmax(300px, max-content) minmax(280px, max-content) minmax(300px, max-content);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "times names contact";
+        column-gap: 50px;
+    }
+
+    .booking__date-item-input-nameContact {
+        width: 280px;
+    }
+
+    .booking__date-item-input-nameContact--width {
+        width: 300px;
+    }
+
+    .booking__button-wrapper {
+        padding-left: 780px;
+    }
+
+    .booking__button {
+        padding: 16px 50px;
+        font-size: 22px;
+    }
 }
