@@ -47,6 +47,32 @@
     background-size: contain;
 }
 
+.faq__item:hover::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    width: 30px;
+    height: 30px;
+    background: url("../../img/icons/hoverPurple.svg") no-repeat;
+    background-size: contain;
+}
+
+.faq__item:active::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    width: 30px;
+    height: 30px;
+    background: url("../../img/icons/activePurple.svg") no-repeat;
+    background-size: contain;
+}
+
 @media (min-width: 350px) {
     .faq {
         padding: 4.68vw 0;
@@ -76,10 +102,13 @@
         margin-bottom: 0;
     }
 
-    .faq__item::after {
+    .faq__item::after,
+    .faq__item:hover::after,
+    .faq__item:active::after {
         right: 4.06vw;
         width: 9.38vw;
         height: 9.38vw;
+        background-size: cover;
     }
 }
 
@@ -108,7 +137,9 @@
         margin-bottom: 0;
     }
 
-    .faq__item::after {
+    .faq__item::after,
+    .faq__item:hover::after,
+    .faq__item:active::after {
         right: 65px;
         width: 46px;
         height: 46px;
@@ -140,7 +171,9 @@
         margin-bottom: 0;
     }
 
-    .faq__item::after {
+    .faq__item::after,
+    .faq__item:hover::after,
+    .faq__item:active::after {
         right: 20px;
         width: 46px;
         height: 46px;
@@ -172,10 +205,20 @@
         margin-bottom: 20px;
     }
 
-    .faq__item::after {
+    .faq__item::after,
+    .faq__item:hover::after,
+    .faq__item:active::after {
         right: 70px;
         width: 46px;
         height: 46px;
+    }
+
+    .faq__item:hover::after {
+        background: url("../../img/icons/hoverPurple.svg") no-repeat;
+    }
+
+    .faq__item:active::after {
+        background: url("../../img/icons/activePurple.svg") no-repeat;
     }
 
     .faq__item:nth-child(even) button {
@@ -185,5 +228,13 @@
 
     .faq__item:nth-child(even)::after {
         background: url("../../img/icons/circleWhite.svg");
+    }
+
+    .faq__item:nth-child(even):hover::after {
+        background: url("../../img/icons/hoverWhite.svg") no-repeat;
+    }
+
+    .faq__item:nth-child(even):active::after {
+        background: url("../../img/icons/activeWhite.svg") no-repeat;
     }
 }

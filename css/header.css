@@ -20,7 +20,25 @@
     order: 1;
     width: 39px;
     height: 20px;
-    background: url("../img/menu.svg") no-repeat;
+    background: url("../img/icons/menu.svg") no-repeat;
+    background-size: contain;
+}
+
+.header__nav:hover,
+.header__nav:focus {
+    order: 1;
+    width: 39px;
+    height: 20px;
+    background: url("../img/icons/menuHover.svg") no-repeat;
+    background-size: contain;
+    outline: none;
+}
+
+.header__nav:active {
+    order: 1;
+    width: 39px;
+    height: 20px;
+    background: url("../img/icons/menuActive.svg") no-repeat;
     background-size: contain;
 }
 
@@ -38,7 +56,10 @@
         height: 13.13vw;
     }
 
-    .header__nav {
+    .header__nav,
+    .header__nav:hover,
+    .header__nav:focus,
+    .header__nav:active {
         width: 12.19vw;
         height: 6.25vw;
     }
@@ -55,7 +76,10 @@
         height: 55px;
     }
 
-    .header__nav {
+    .header__nav,
+    .header__nav:hover,
+    .header__nav:focus,
+    .header__nav:active {
         width: 54px;
         height: 29px;
     }
@@ -100,6 +124,12 @@
         order: 2;
         width: auto;
         background: none;
+    }
+
+    .header__nav:hover,
+    .header__nav:focus,
+    .header__nav:active {
+        display: none;
     }
 
     .header__list {

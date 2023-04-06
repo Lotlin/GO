@@ -68,6 +68,32 @@
     height: 30px;
 }
 
+.contact__social-link svg {
+    border: 1px solid transparent;
+    transition-duration: 500ms;
+    transition-property: color;
+}
+
+.contact__social-link:hover svg {
+    border: 1px solid transparent;
+    color: var(--backgroundColor, #eadeed);
+}
+
+.contact__social-link:focus svg {
+    outline: none;
+}
+
+.contact__social-link:focus svg {
+    color: var(--backgroundColor, #eadeed);
+    border: 1px solid var(--borderColor, #cd06ff);
+    outline: none;
+}
+
+.contact__social-link:active svg {
+    border: 1px solid transparent;
+    color: var(--backgroundActiveColor, #cd06ff);
+}
+
 .contact__map {
     max-width: 280px;
     min-height: 194px;

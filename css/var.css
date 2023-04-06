@@ -33,3 +33,9 @@ html {
     --buttonHover: #840aa3;
     --buttonActive: #640aa3;
 }
+
+.contact {
+    --backgroundColor: #eadeed;
+    --borderColor: #cd06ff;
+    --backgroundActiveColor: #cd06ff;
+}

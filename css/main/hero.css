@@ -301,6 +301,40 @@
         left: 473px;
         top: 480px;
     }
+
+    .hero__down:hover {
+        position: absolute;
+        display: inline-block;
+        background: url("../../img/icons/downHover.svg");
+        background-size: contain;
+        width: 67px;
+        height: 67px;
+        left: 473px;
+        top: 480px;
+    }
+
+    .hero__down:focus {
+        position: absolute;
+        display: inline-block;
+        background: url("../../img/icons/down.svg");
+        background-size: contain;
+        width: 67px;
+        height: 67px;
+        left: 473px;
+        top: 480px;
+        outline: 1px solid #cd06ff;
+    }
+
+    .hero__down:active {
+        position: absolute;
+        display: inline-block;
+        background: url("../../img/icons/downActive.svg");
+        background-size: contain;
+        width: 67px;
+        height: 67px;
+        left: 473px;
+        top: 480px;
+    }
 }
 
 @media(min-width: 1440px) {
@@ -360,11 +394,10 @@
         font-size: 26px;
     }
 
-    .hero__down {
-        position: absolute;
-        display: inline-block;
-        background: url("../../img/icons/down.svg");
-        background-size: contain;
+    .hero__down,
+    .hero__down:hover,
+    .hero__down:focus,
+    .hero__down:active {
         width: 97px;
         height: 97px;
         left: 669px;
