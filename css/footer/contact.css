@@ -154,6 +154,59 @@
     }
 }
 
+@media (min-width: 480px) {
+    .contact {
+        padding-bottom: 5.21vw;
+    }
+
+    .contact__title {
+        margin-bottom: 3.91vw;
+    }
+
+    .contact__info {
+        row-gap: 3.52vw;
+        margin-bottom: 3.91vw;
+    }
+
+    .contact__item {
+        max-width: 39.32vw;
+        font-size: 3.13vw;
+        line-height: 3.65vw;
+    }
+
+    .contact__item:not(:last-child) {
+        margin-bottom: 3.52vw;
+    }
+
+    .contact__item::before {
+        width: 3.39vw;
+        height: 3.39vw;
+    }
+
+    .contact__item-address::before {
+        left: 6.51vw;
+    }
+
+    .contact__item-mail::before {
+        top: 0.65vw;
+        left: -2.60vw;
+    }
+
+    .contact__social-list {
+        column-gap: 3.39vw;
+    }
+
+    .contact__social-item {
+        width: 5.21vw;
+        height: 5.21vw;
+    }
+
+    .contact__map {
+        max-width: 89.58vw;
+        min-height: 43.88vw;
+    }
+}
+
 @media (min-width: 768px) {
     .contact {
         padding-bottom: 40px;

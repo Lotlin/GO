@@ -9,6 +9,12 @@
     }
 }
 
+@media (min-width: 480px) {
+    .footer {
+        padding: 4.58vw 0 2.34vw;
+    }
+}
+
 @media (min-width: 768px) {
     .footer {
         padding: 35px 0 18px;

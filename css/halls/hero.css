@@ -48,6 +48,12 @@
     font-weight: 700;
 }
 
+.halls__hero-link:hover,
+.halls__hero-link:focus,
+.halls__hero-link:active {
+    color: var(--mainPurple, #cd06ff);
+}
+
 .halls__hero-link::before {
     position: absolute;
     display: inline-block;
@@ -105,7 +111,7 @@
 }
 
 @media (min-width: 768px) {
-   .halls__hero-img {
+    .halls__hero-img {
         margin-bottom: 60px;
         width: 768px;
         height: 402px;

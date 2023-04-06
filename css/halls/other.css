@@ -49,6 +49,13 @@
     height: 140px;
 }
 
+.halls__other-link:hover,
+.halls__other-link:focus,
+.halls__other-link:active {
+    outline: 1px solid var(--mainPurple, #cd06ff);
+    outline-offset: 3px;
+}
+
 .halls__other-link-neon {
     background: url("../../img/halls/neon.jpg") no-repeat center;
     background-size: cover;

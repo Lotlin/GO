@@ -38,6 +38,13 @@
     text-transform: uppercase;
 }
 
+.hall__link:hover,
+.hall__link:focus,
+.hall__link:active {
+    outline: 1px solid var(--mainPurple, #cd06ff);
+    outline-offset: 3px;
+}
+
 .hall__link-vibes {
     background: url("../../img/vibes.jpg") no-repeat;
     background-size: contain;
@@ -80,6 +87,35 @@
         font-size: 8.13vw;
         font-weight: 700;
         line-height: 10.63vw;
+    }
+}
+
+@media (min-width: 480px) {
+    .hall {
+        padding: 3.91vw 0 4.30vw;
+        min-height: 71.74vw;
+    }
+
+    .hall__title {
+        margin-bottom: 3.91vw;
+    }
+
+    .hall__list {
+        min-height: 54.30vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2.21vw 2.60vw;
+        grid-template-areas:
+        "vibes star"
+        "west neon";
+    }
+
+    .hall__link {
+        width: 43.62vw;
+        height: 26.04vw;
+        padding: 8.07vw 13.93vw 0 13.93vw;
+        font-size: 5.21vw;
+        line-height: 6.51vw;
     }
 }
 

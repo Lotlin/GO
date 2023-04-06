@@ -77,6 +77,50 @@
     }
 }
 
+@media (min-width: 480px) {
+    .review {
+        padding: 3.91vw 0;
+    }
+
+    .review__title {
+        margin-bottom: 4.04vw;
+    }
+
+    .review__wrapper {
+        row-gap: 3.91vw;
+    }
+
+    .review__item {
+        max-width: 73.05vw;
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.56vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .review__user {
+        text-align: center;
+    }
+
+    .review__user-img {
+        margin-bottom: 2.21vw;
+        width: 19.92vw;
+        height: 19.92vw;
+    }
+
+    .review__user-name {
+        font-size: 1.82vw;
+    }
+
+    .review__text {
+        max-width: 51.17vw;
+        padding-top: 3.91vw;
+        font-size: 2.08vw;
+        line-height: 2.86vw;
+    }
+}
+
 @media (min-width: 768px) {
     .review {
         padding: 30px 0;
