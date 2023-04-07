@@ -26,6 +26,15 @@
     position: relative;
 }
 
+.ad__item {
+    position: relative;
+    transition-duration: 500ms;
+}
+
+.ad__item:hover {
+    scale: 110%;
+}
+
 .ad__item--vr {
     grid-area: vr;
     position: relative;

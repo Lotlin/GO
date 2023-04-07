@@ -740,12 +740,10 @@
         font-size: 1.82vw;
     }
 
-    .booking__button-wrapper {
-        padding-left: 50.52vw;
-    }
-
     .booking__button {
-        padding: 2.08vw 6.51vw;
+        display: flex;
+        margin-left: auto;
+        padding: 2.08vw 6vw;
         border-radius: 1.3vw;
         border: 3px solid transparent;
         font-size: 2.86vw;
@@ -943,12 +941,8 @@
         font-size: 14px;
     }
 
-    .booking__button-wrapper {
-        padding-left: 388px;
-    }
-
     .booking__button {
-        padding: 16px 50px;
+        padding: 16px 46px;
         border-radius: 10px;
         font-size: 22px;
     }
@@ -1103,12 +1097,8 @@
         width: 254px;
     }
 
-    .booking__button-wrapper {
-        padding-left: 650px;
-    }
-
     .booking__button {
-        padding: 13px 46px 13px 45px;
+        padding: 13px 43px;
         border-radius: 10px;
         font-size: 18px;
     }
@@ -1208,6 +1198,7 @@
     }
 
     .booking__button {
+        margin-left: 780px;
         padding: 16px 50px;
         font-size: 22px;
     }

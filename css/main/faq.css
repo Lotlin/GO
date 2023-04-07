@@ -8,13 +8,12 @@
 
 .faq__item {
     position: relative;
-}
-
-.faq__item button {
     width: 280px;
     min-height: 46px;
     padding: 7px 43px 7px 10px;
+    background-color: #ffffff;
     border: none;
+    color: #000000;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -84,9 +83,6 @@
 
     .faq__item {
         position: relative;
-    }
-
-    .faq__item button {
         width: 87.5vw;
         min-height: 14.38vw;
         padding: 2.19vw 13.44vw 2.19vw 3.13vw;
@@ -121,7 +117,7 @@
         margin-bottom: 3.91vw;
     }
 
-    .faq__item button {
+    .faq__item {
         width: 89.58vw;
         min-height: 9.11vw;
         padding: 2.99vw 29.56vw 3.13vw 7.03vw;
@@ -155,7 +151,7 @@
         margin-bottom: 30px;
     }
 
-    .faq__item button {
+    .faq__item {
         width: 688px;
         min-height: 70px;
         padding: 23px 227px 24px 54px;
@@ -189,7 +185,7 @@
         margin-bottom: 26px;
     }
 
-    .faq__item button {
+    .faq__item {
         width: 904px;
         min-height: 70px;
         padding: 23px 134px 23px 25px;
@@ -223,7 +219,7 @@
         margin-bottom: 40px;
     }
 
-    .faq__item button {
+    .faq__item {
         width: 1180px;
         min-height: 87px;
         padding: 30px 330px 29px 70px;
@@ -255,7 +251,7 @@
         background: url("../../img/icons/activePurple.svg") no-repeat;
     }
 
-    .faq__item:nth-child(even) button {
+    .faq__item:nth-child(even) {
         background-color: var(--backgroundColor, #440F51);
         color: var(--color, #ffffff);
     }
