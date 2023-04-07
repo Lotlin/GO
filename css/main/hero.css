@@ -91,12 +91,12 @@
 @media(min-width: 350px) {
     .hero {
         min-height: 74.07vw;
-        padding: 3.13vw 0 7.19vw;
+        padding: 3.13vw 0 6vw;
     }
 
     .hero__container::before {
         width: 50.31vw;
-        height: 55.94vw;
+        height: 57vw;
         left: 42vw;
         top: 7.81vw;
     }
@@ -174,6 +174,7 @@
         height: 479px;
         left: 319px;
         top: 58px;
+        background-size: cover;
     }
 
     .hero__title {

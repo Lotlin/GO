@@ -359,7 +359,11 @@
 .booking__date-item-input-nameContact {
     width: 280px;
     height: 52px;
+    padding-left: 20px;
     border: 2px solid transparent;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
 }
 
 .booking__date-item-input-nameContact:focus,
@@ -539,6 +543,7 @@
     .booking__date-item-input-nameContact {
         width: 87.5vw;
         height: 16.25vw;
+        font-size: 4.38vw;
     }
 
     .booking__date-item-span-nameContact {
@@ -728,6 +733,7 @@
         width: 36.46vw;
         height: 6.77vw;
         border: 2px solid transparent;
+        font-size: 2.34vw;
     }
 
     .booking__date-item-input-nameContact--width {
@@ -929,6 +935,8 @@
         width: 280px;
         height: 52px;
         border: 2px solid transparent;
+        font-size: 18px;
+        line-height: 28px;
     }
 
     .booking__date-item-input-nameContact--width {

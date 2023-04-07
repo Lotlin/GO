@@ -57,6 +57,11 @@
     left: -14px;
 }
 
+.contact__item-link:hover {
+    color: var(--mainPurple, #cd06ff);
+
+}
+
 .contact__social-list {
     display: flex;
     column-gap: 20px;
@@ -76,7 +81,7 @@
 
 .contact__social-link:hover svg {
     border: 1px solid transparent;
-    color: var(--backgroundColor, #eadeed);
+    color: var(--mainPurple, #cd06ff);
 }
 
 .contact__social-link:focus svg {

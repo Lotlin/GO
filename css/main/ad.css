@@ -1,5 +1,5 @@
 .ad {
-    padding: 10px 0 23px;
+    padding: 23px 0 23px;
     min-height: 334px;
 }
 
@@ -87,7 +87,7 @@
 
 @media (min-width: 350px) {
     .ad {
-        padding: 7.19vw 0 4.69vw;
+        padding: 6vw 0 4.69vw;
         min-height: 95.43vw;
     }
 
