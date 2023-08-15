@@ -15,6 +15,7 @@
   <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#000000">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="theme-color" content="#ffffff">
+  <script src="js/main.js" type="module"></script>
   <title>Game Over - игровое пространство виртуальной реальности</title>
 </head>
 <body>
@@ -34,6 +35,23 @@
       </nav>
 
       <button class="header__nav-button" type="button" value="callRequest" tabindex="2">Заказать звонок</button>
+      
+      <div class="header__modal-wrapper">
+        <div class="header__modal callback">
+          <form action="#" class="callback-form">
+            <label class="callback-form__label">
+              <span class="callback-form__span">Ваше имя</span>
+              <input class="callback-form__input callback-form__name" type="text" required>
+            </label>
+            <label class="callback-form__label">
+              <span class="callback-form__span">Ваш номер телефона</span>
+              <input class="callback-form__input callback-form__phone" type="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="+79851111111" maxlength="12" required>
+            </label>
+            <button class="callback-form__button" type="submit">Позвоните мне</button>
+          </form>
+          <button class="header__modal-close-button"></button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -302,11 +320,37 @@
       <div class="container faq__container">
         <h2 class="faq__title section-title">Частые вопросы</h2>
         <ul class="faq__list">
-          <li class="faq__item" tabindex="12">Можно ли забронировать комнату онлайн?</li>
-          <li class="faq__item" tabindex="12">Могут ли мне вернуть деньги за бронь?</li>
-          <li class="faq__item" tabindex="12">Какая комната самая популярная?</li>
-          <li class="faq__item" tabindex="12">Как получить VIP карту?</li>
-          <li class="faq__item" tabindex="12">Какая максимальная вместимость комнат?</li>
+          <li class="faq__item" tabindex="12">
+            <p class="faq__question">Можно ли забронировать комнату онлайн?</p>
+            <button class="faq__button faq__button--purple"></button>
+            <div class="faq__answer-wrapper">
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias consequuntur illo magni earum quasi corrupti impedit natus asperiores, labore doloribus.</p>
+            </div>
+          </li>
+          <li class="faq__item" tabindex="12">Могут ли мне вернуть деньги за бронь?
+            <button class="faq__button faq__button--white"></button>
+            <div class="faq__answer-wrapper">
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim ullam natus dolorum dicta id, ea ipsa nihil quidem quasi. Necessitatibus aspernatur architecto voluptatibus aut, optio nobis vero esse provident.</p>
+            </div>
+          </li>
+          <li class="faq__item" tabindex="12">Какая комната самая популярная?
+            <button class="faq__button faq__button--purple"></button>
+            <div class="faq__answer-wrapper">
+              <p class="faq__answer">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li class="faq__item" tabindex="12">Как получить VIP карту?
+            <button class="faq__button faq__button--white"></button>
+            <div class="faq__answer-wrapper">
+              <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ab!</p>
+            </div>
+          </li>
+          <li class="faq__item" tabindex="12">Какая максимальная вместимость комнат?
+            <button class="faq__button faq__button--purple"></button>
+            <div class="faq__answer-wrapper">
+              <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>

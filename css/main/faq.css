@@ -33,10 +33,16 @@
     display: none;
 }
 
-.faq__item::after {
+.faq__answer-wrapper {
+    height: 0;
+    padding-top: 10px;
+    overflow: hidden;
+    transition: height .4s ease-in-out;
+    font-weight: 500;
+}
+
+.faq__button {
     position: absolute;
-    display: inline-block;
-    content: "";
     top: 50%;
     transform: translateY(-50%);
     right: 13px;
@@ -44,12 +50,11 @@
     height: 30px;
     background: url("../../img/icons/circlePurple.svg") no-repeat;
     background-size: contain;
+    border: none;
 }
 
-.faq__item:hover::after {
+.faq__button:hover {
     position: absolute;
-    display: inline-block;
-    content: "";
     top: 50%;
     transform: translateY(-50%);
     right: 13px;
@@ -59,10 +64,10 @@
     background-size: contain;
 }
 
-.faq__item:active::after {
+.faq__button:active,
+.faq__item--active .faq__button {
     position: absolute;
     display: inline-block;
-    content: "";
     top: 50%;
     transform: translateY(-50%);
     right: 13px;
@@ -98,12 +103,13 @@
         margin-bottom: 0;
     }
 
-    .faq__item::after,
-    .faq__item:hover::after,
-    .faq__item:active::after {
+    .faq__button,
+    .faq__button:hover,
+    .faq__button:active,
+    .faq__item--active .faq__button {
         right: 4.06vw;
-        width: 9.38vw;
-        height: 9.38vw;
+        width: 9.35vw;
+        height: 9.35vw;
         background-size: cover;
     }
 }
@@ -133,12 +139,13 @@
         margin-bottom: 0;
     }
 
-    .faq__item::after,
-    .faq__item:hover::after,
-    .faq__item:active::after {
+    .faq__button,
+    .faq__button:hover,
+    .faq__button:active,
+    .faq__item--active .faq__button {
         right: 8.46vw;
-        width: 5.99vw;
-        height: 5.99vw;
+        width: 5.80vw;
+        height: 5.80vw;
     }
 }
 
@@ -167,9 +174,10 @@
         margin-bottom: 0;
     }
 
-    .faq__item::after,
-    .faq__item:hover::after,
-    .faq__item:active::after {
+    .faq__button,
+    .faq__button:hover,
+    .faq__button:active,
+    .faq__item--active .faq__button {
         right: 65px;
         width: 46px;
         height: 46px;
@@ -201,9 +209,10 @@
         margin-bottom: 0;
     }
 
-    .faq__item::after,
-    .faq__item:hover::after,
-    .faq__item:active::after {
+    .faq__button,
+    .faq__button:hover,
+    .faq__button:active,
+    .faq__item--active .faq__button {
         right: 20px;
         width: 46px;
         height: 46px;
@@ -235,19 +244,21 @@
         margin-bottom: 20px;
     }
 
-    .faq__item::after,
-    .faq__item:hover::after,
-    .faq__item:active::after {
+    .faq__button,
+    .faq__button:hover,
+    .faq__button:active,
+    .faq__item--active .faq__button {
         right: 70px;
         width: 46px;
         height: 46px;
     }
 
-    .faq__item:hover::after {
+    .faq__button:hover {
         background: url("../../img/icons/hoverPurple.svg") no-repeat;
     }
 
-    .faq__item:active::after {
+    .faq__button:active,
+    .faq__item--active .faq__button  {
         background: url("../../img/icons/activePurple.svg") no-repeat;
     }
 
@@ -256,15 +267,16 @@
         color: var(--color, #ffffff);
     }
 
-    .faq__item:nth-child(even)::after {
+    .faq__button--white {
         background: url("../../img/icons/circleWhite.svg");
     }
 
-    .faq__item:nth-child(even):hover::after {
+    .faq__button--white:hover {
         background: url("../../img/icons/hoverWhite.svg") no-repeat;
     }
 
-    .faq__item:nth-child(even):active::after {
+    .faq__button--white:active,
+    .faq__item--active .faq__button--active-white {
         background: url("../../img/icons/activeWhite.svg") no-repeat;
     }
 }
