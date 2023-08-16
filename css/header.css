@@ -10,8 +10,11 @@
     align-items: center;
 }
 
-.header__logo {
+.header__link {
     order: 2;
+}
+
+.header__logo {
     width: 66px;
     height: 42px;
 }
