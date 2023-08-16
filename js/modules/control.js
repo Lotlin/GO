@@ -1,5 +1,5 @@
 import {
-  faqAnswersWrappers, faqButtons, faqItems, headerOpenModalButton,
+  faqAnswersWrappers, faqItems, headerOpenModalButton,
   headerModalCallBack, headerCloseModalButton,
 } from './getElements.js';
 import {getMaxHeight} from './service.js';
@@ -7,7 +7,7 @@ import {getMaxHeight} from './service.js';
 export const faqControl = () => {
   const highestAnswerWrapper = getMaxHeight(faqAnswersWrappers);
 
-  faqButtons.forEach((btn, index) => {
+  faqItems.forEach((btn, index) => {
     btn.addEventListener('click', () => {
       for (let i = 0; i < faqItems.length; i++) {
         if (index === i) {
