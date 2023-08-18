@@ -1,7 +1,12 @@
 import {
-  faqControl, openHeaderModal, closeHeaderModal,
+  faqControl, openHeaderModal, closeHeaderModal, showHeaderBurger,
+  closeHeaderBurger,
 } from './modules/control.js';
 
+import {debounce} from './modules/patterns.js';
+
 faqControl();
-openHeaderModal();
-closeHeaderModal();
+debounce(openHeaderModal());
+debounce(closeHeaderModal());
+debounce(showHeaderBurger());
+debounce(closeHeaderBurger());

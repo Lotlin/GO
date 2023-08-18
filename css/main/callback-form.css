@@ -1,3 +1,46 @@
+.callback-form {
+  min-height: 352px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  font-size: 14px;
+}
+
+.callback-form__span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.callback-form__input {
+  height: 30px;
+  padding-left: 20px;
+  border: 2px solid transparent;
+  text-transform: capitalize;
+  border-radius: 2px;
+}
+
+.callback-form__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.callback-form__label:last-of-type {
+  margin-bottom: 40px;
+}
+
+.callback-form__button {
+  width: 211px;
+  padding: 5px 2px;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 3px #ffffff;
+  color: var(--buttonColor, #6c0287);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
 @media (min-width: 768px) {
   .callback-form {
     display: flex;

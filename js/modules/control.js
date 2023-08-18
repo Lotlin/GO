@@ -1,6 +1,6 @@
 import {
-  faqAnswersWrappers, faqItems, headerOpenModalButton,
-  headerModalCallBack, headerCloseModalButton,
+  body, faqAnswersWrappers, faqItems, headerOpenModalButton,
+  headerModalCallBack, headerCloseModalButton, burgerImage, burgerList,
 } from './getElements.js';
 import {getMaxHeight} from './service.js';
 
@@ -38,6 +38,23 @@ export const closeHeaderModal = () => {
     const target = e.target;
     if (target === headerModalCallBack) {
       headerModalCallBack.classList.remove('header__modal-wrapper--visible');
+    }
+  });
+};
+
+export const showHeaderBurger = () => {
+  burgerImage.addEventListener('click', () => {
+    burgerList.classList.add('header__list--active');
+    headerOpenModalButton.classList.add('header__nav-button--active');
+  });
+};
+
+export const closeHeaderBurger = () => {
+  body.addEventListener('click', e => {
+    const target = e.target;
+    if (target !== burgerList && target !== burgerImage) {
+      burgerList.classList.remove('header__list--active');
+      headerOpenModalButton.classList.remove('header__nav-button--active');
     }
   });
 };
