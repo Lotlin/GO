@@ -1,6 +1,7 @@
 import {
   body, faqAnswersWrappers, faqItems, headerOpenModalButton,
   headerModalCallBack, headerCloseModalButton, burgerImage, burgerList,
+  modal, inputTelModal, inputNameModal,
 } from './getElements.js';
 import {getMaxHeight} from './service.js';
 
@@ -57,4 +58,33 @@ export const closeHeaderBurger = () => {
       headerOpenModalButton.classList.remove('header__nav-button--active');
     }
   });
+};
+
+export const modalValidate = () => {
+  const telMask = new Inputmask('+7 (999)-999-99-99');
+  telMask.mask(inputTelModal);
+
+  const justValidate = new JustValidate(modal);
+  justValidate
+      .addField(inputTelModal, [
+        {
+          rule: 'required',
+          errorMessage: 'Укажите ваш email',
+        },
+      ])
+      .addField(inputNameModal, [
+        {
+          rule: 'required',
+          errorMessage: 'Укажите ваше имя',
+        },
+        {
+          rule: 'minLength',
+          value: 2,
+          errorMessage: 'Имя должно быть не короче 3-х символов',
+        },
+      ])
+      .onSuccess(event => {
+        const target = event.target;
+        console.log(target);
+      });
 };

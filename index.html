@@ -17,6 +17,8 @@
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="theme-color" content="#ffffff">
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="js/lib/inputmask.min.js"></script>
+  <script defer src="js/lib/just-validate.production.min.js"></script>
   <script defer src="js/main.js" type="module"></script>
   <title>Game Over - игровое пространство виртуальной реальности</title>
 </head>
@@ -43,11 +45,11 @@
           <form action="#" class="callback-form">
             <label class="callback-form__label">
               <span class="callback-form__span">Ваше имя</span>
-              <input class="callback-form__input callback-form__name" type="text" required>
+              <input class="callback-form__input callback-form__name" type="text">
             </label>
             <label class="callback-form__label">
               <span class="callback-form__span">Ваш номер телефона</span>
-              <input class="callback-form__input callback-form__phone" type="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="+79851111111" maxlength="12" required>
+              <input class="callback-form__input callback-form__phone" type="tel" placeholder="+79851111111">
             </label>
             <button class="callback-form__button" type="submit">Позвоните мне</button>
           </form>

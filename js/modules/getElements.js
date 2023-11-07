@@ -16,3 +16,7 @@ export const burgerList =
 export const faqItems = faqList.querySelectorAll('.faq__item');
 export const faqAnswersWrappers =
   faqList.querySelectorAll('.faq__answer-wrapper');
+
+export const modal = document.querySelector('.callback-form');
+export const inputTelModal = modal.querySelector('.callback-form__phone');
+export const inputNameModal = modal.querySelector('.callback-form__name');

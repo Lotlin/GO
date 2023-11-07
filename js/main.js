@@ -1,6 +1,6 @@
 import {
   faqControl, openHeaderModal, closeHeaderModal, showHeaderBurger,
-  closeHeaderBurger,
+  closeHeaderBurger, modalValidate,
 } from './modules/control.js';
 import {debounce} from './modules/patterns.js';
 import {swiper} from './modules/swiper.js';
@@ -10,4 +10,5 @@ debounce(openHeaderModal());
 debounce(closeHeaderModal());
 debounce(showHeaderBurger());
 debounce(closeHeaderBurger());
+modalValidate();
 swiper;
