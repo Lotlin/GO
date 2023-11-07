@@ -1,6 +1,9 @@
 .hall {
     padding: 15px 0 30px;
-    min-height: 765px;
+}
+
+.hall__wrapper {
+    position: relative;
 }
 
 .hall__title {
@@ -8,29 +11,15 @@
 }
 
 .hall__list {
-    min-height: 702px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 10px;
-    grid-template-areas:
-    "vibes"
-    "star"
-    "west"
-    "neon";
-}
-
-.hall__item {
-    position: relative;
+    width: 280px;
+    height: 168px;  
 }
 
 .hall__link {
-    position: absolute;
+    position: relative;
+    display: inline-block;
     width: 280px;
     height: 168px;
-    padding: 50px 100px 0 100px;
-    top: 0;
-    left: 0;
     font-size: 26px;
     font-weight: 700;
     line-height: 34px;
@@ -65,10 +54,22 @@
     background-size: contain;
 }
 
+.hall__item-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 79px;
+}
+
+.hall__button-left,
+.hall__button-right {
+    display: none;
+}
+
 @media (min-width: 350px) {
     .hall {
         padding: 4.69vw 0;
-        min-height: 239vw;
     }
 
     .hall__title {
@@ -76,24 +77,56 @@
     }
 
     .hall__list {
-        min-height: 219.38vw;
-        row-gap: 3.13vw;
+        height: 40vw;
+        text-align: center;
     }
 
     .hall__link {
-        width: 87.5vw;
-        height: 52.5vw;
-        padding: 15.63vw 31.25vw 0 31.25vw;
+        width: 60vw;
+        height: 36vw;
         font-size: 8.13vw;
         font-weight: 700;
         line-height: 10.63vw;
     }
+
+    .hall__button-left,
+    .hall__button-right {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        top: calc(50% - 15px);
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .hall__button-right {
+        right: -5px;
+    }
+    
+    .hall__button-left {
+        left: -5px;
+    }
+
+    .hall__button-left svg,
+    .hall__button-right svg {
+        fill: #ffffff;
+    }
+
+    .hall__button-left:hover svg,
+    .hall__button-left:active svg,
+    .hall__button-right:hover svg,
+    .hall__button-right:active svg {
+        fill: #cd06ff;
+    }
+    
 }
 
 @media (min-width: 480px) {
     .hall {
         padding: 3.91vw 0 4.30vw;
-        min-height: 71.74vw;
     }
 
     .hall__title {
@@ -101,57 +134,47 @@
     }
 
     .hall__list {
-        min-height: 54.30vw;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 2.21vw 2.60vw;
-        grid-template-areas:
-        "vibes star"
-        "west neon";
+        height: 30vw;
+        text-align:center;
     }
 
     .hall__link {
-        width: 43.62vw;
-        height: 26.04vw;
-        padding: 8.07vw 13.93vw 0 13.93vw;
+        width: 48vw;
+        height: 30vw;
         font-size: 5.21vw;
         line-height: 6.51vw;
+    }
+
+    .hall__button-right {
+        right: 8.3vw;
+    }
+    
+    .hall__button-left {
+        left: 8.3vw;
     }
 }
 
 @media (min-width: 768px) {
     .hall {
         padding: 30px 0 33px;
-        min-height: 551px;
     }
 
     .hall__title {
         margin-bottom: 30px;
     }
 
-    .hall__list {
-        min-height: 417px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 17px 20px;
-        grid-template-areas:
-        "vibes star"
-        "west neon";
+    .hall__button-right {
+        right: 1.3vw;
     }
-
-    .hall__link {
-        width: 335px;
-        height: 200px;
-        padding: 62px 107px 0 107px;
-        font-size: 40px;
-        line-height: 50px;
+    
+    .hall__button-left {
+        left: 1.3vw;
     }
 }
 
 @media (min-width: 1024px) {
     .hall {
         padding: 35px 0 69px;
-        min-height: 699px;
     }
 
     .hall__title {
@@ -159,39 +182,43 @@
     }
 
     .hall__list {
-        min-height: 553px;
-        gap: 19px 20px;
+        width: auto;
+        height: auto;
     }
 
     .hall__link {
         width: 443px;
         height: 267px;
-        padding: 73px 95px 0 95px;
         font-size: 50px;
         line-height: 60px;
+    }
+
+    .hall__item-title {
+        max-width: 252px;
     }
 }
 
 @media (min-width: 1440px) {
     .hall {
         padding: 50px 0;
-        min-height: 914px;
     }
 
     .hall__title {
         margin-bottom: 40px;
     }
 
-    .hall__list {
-        min-height: 718px;
-        gap: 20px;
-    }
-
     .hall__link {
         width: 580px;
         height: 349px;
-        padding: 64px 164px 0 164px;
         font-size: 70px;
         line-height: 80px;
+    }
+
+    .hall__button-right {
+        right: 100px;
+    }
+    
+    .hall__button-left {
+        left: 100px;;
     }
 }
